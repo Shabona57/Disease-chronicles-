@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disease Chronicles — An Archive of Human Illness</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{--ink:#14181C;--ink-2:#1E262C;--ink-line:#333d43;--parchment:#ECE4D0;--parchment-dim:#DED4B8;--oxblood:#8B2E2E;--sage:#5B7461;--gold:#B08D3E;--bone:#C9C2AF;--bone-dim:#8a8578}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--bone);font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Fraunces,serif;margin:0;color:var(--parchment)}a{color:inherit}:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.mono{font-family:'IBM Plex Mono',monospace;letter-spacing:.03em}.en-text{display:none}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:22px clamp(20px,5vw,64px);border-bottom:1px solid var(--ink-line);position:sticky;top:0;background:rgba(20,24,28,.92);backdrop-filter:blur(6px);z-index:50;gap:16px;flex-wrap:wrap}
+.brand{font-family:Fraunces,serif;font-weight:700;font-size:1.15rem;color:var(--parchment)}.brand span{color:var(--oxblood)}.topbar .right{display:flex;align-items:center;gap:18px}.topbar .tag{font-size:.7rem;color:var(--bone-dim);text-transform:uppercase}.lang-toggle{display:flex;border:1px solid var(--ink-line);border-radius:3px;overflow:hidden}.lang-btn{background:none;border:0;cursor:pointer;color:var(--bone-dim);font-family:'IBM Plex Mono',monospace;font-size:.72rem;padding:6px 12px}.lang-btn.active{background:var(--oxblood);color:var(--parchment)}
+.hero{padding:clamp(60px,10vw,110px) clamp(20px,5vw,64px) clamp(50px,8vw,90px);border-bottom:1px solid var(--ink-line);position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(180deg,transparent,transparent 27px,rgba(201,194,175,.035) 28px);pointer-events:none}.eyebrow{font-size:.72rem;text-transform:uppercase;color:var(--oxblood);font-family:'IBM Plex Mono',monospace;letter-spacing:.14em;display:flex;align-items:center;gap:10px;margin-bottom:22px}.eyebrow:before{content:"";width:26px;height:1px;background:var(--oxblood)}.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:900;line-height:.98;max-width:14ch}.hero p{margin-top:26px;max-width:46ch;font-size:1.08rem;line-height:1.6}.stampline{margin-top:40px;display:flex;gap:28px;flex-wrap:wrap}.stat{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:var(--bone-dim)}.stat b{display:block;color:var(--parchment);font-size:1.3rem;font-family:Fraunces,serif}
+.shelf{display:flex;gap:0;flex-wrap:wrap;padding:0 clamp(20px,5vw,64px);border-bottom:1px solid var(--ink-line);background:var(--ink-2)}.shelf button{background:none;border:0;cursor:pointer;padding:18px 20px;font-family:'IBM Plex Mono',monospace;font-size:.76rem;text-transform:uppercase;letter-spacing:.06em;color:var(--bone-dim);border-right:1px solid var(--ink-line);border-bottom:3px solid transparent}.shelf button.active,.shelf button:hover{color:var(--parchment)}.shelf button.active{border-bottom-color:var(--oxblood)}
+.archive{padding:clamp(40px,6vw,64px) clamp(20px,5vw,64px) 110px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px}.card{background:var(--parchment);color:#24211b;border-radius:2px;padding:22px 22px 24px;position:relative;cursor:pointer;border:1px solid var(--parchment-dim);transition:.18s;display:flex;flex-direction:column;gap:14px;min-height:230px}.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.35)}.card .rowtop{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:.68rem;text-transform:uppercase;color:#6b6250}.card h3{color:#1c1a16;font-size:1.4rem;line-height:1.1}.card p{font-size:.88rem;line-height:1.5;color:#4b4638;margin:0}.foot{margin-top:auto;display:flex;justify-content:space-between;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:#6b6250}.stamp{position:absolute;top:16px;right:16px;font-family:'IBM Plex Mono',monospace;font-size:.62rem;font-weight:600;border:1.5px solid var(--oxblood);color:var(--oxblood);padding:3px 8px;transform:rotate(6deg);text-transform:uppercase}.stamp.sage{border-color:var(--sage);color:var(--sage)}.stamp.gold{border-color:var(--gold);color:var(--gold)}
+footer{padding:34px clamp(20px,5vw,64px);border-top:1px solid var(--ink-line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.8rem;color:var(--bone-dim)}
+#case-view{display:none}#case-view.active{display:block}#home-view.hidden{display:none}.back-link{display:inline-flex;align-items:center;gap:8px;padding:22px clamp(20px,5vw,64px) 0;font-family:'IBM Plex Mono',monospace;font-size:.75rem;text-transform:uppercase;color:var(--bone-dim);background:none;border:0;cursor:pointer}.back-link:hover{color:var(--gold)}
+.case-hero{padding:20px clamp(20px,5vw,64px) 50px;border-bottom:1px solid var(--ink-line)}.case-hero .eyebrow{color:var(--gold)}.case-hero .eyebrow:before{background:var(--gold)}.case-hero h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:900}.case-hero .sub{margin-top:14px;font-size:1.05rem;color:var(--bone);max-width:60ch;font-style:italic;font-family:Fraunces,serif}
+.vitals{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--ink-line);margin:34px clamp(20px,5vw,64px) 0;border:1px solid var(--ink-line)}.vitals div{background:var(--ink);padding:18px 20px}.vitals .label{font-family:'IBM Plex Mono',monospace;font-size:.65rem;text-transform:uppercase;color:var(--bone-dim);letter-spacing:.08em}.vitals .value{font-family:Fraunces,serif;font-size:1.05rem;color:var(--parchment);margin-top:6px;font-weight:600}
+.case-content{padding-bottom:70px}.section{padding:50px clamp(20px,5vw,64px);border-bottom:1px solid var(--ink-line);max-width:900px}.section h2{font-size:1.6rem;margin-bottom:22px}.section h2 .no{color:var(--oxblood);font-family:'IBM Plex Mono',monospace;font-size:.9rem;margin-right:12px}.section p{line-height:1.75;color:var(--bone);font-size:1rem;margin:0 0 14px}.timeline{border-left:2px solid var(--ink-line);padding-left:28px;display:flex;flex-direction:column;gap:32px;margin-left:6px}.tl-item{position:relative}.tl-item:before{content:"";position:absolute;left:-34px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--ink);border:2px solid var(--oxblood)}.tl-item .era{font-family:'IBM Plex Mono',monospace;font-size:.72rem;text-transform:uppercase;color:var(--oxblood)}.tl-item h4{font-size:1.15rem;margin:6px 0 8px}.tl-item p{margin:0;color:var(--bone);font-size:.95rem;line-height:1.65}.living-box{background:var(--parchment);color:#24211b;padding:26px 28px;border-radius:2px;margin-top:10px}.living-box h3{color:#1c1a16;font-size:1.1rem;margin-bottom:10px}.living-box p{color:#4b4638;font-size:.95rem}.source-list{display:flex;flex-direction:column;gap:8px}.source-list a{color:var(--parchment);text-decoration:none}.source-list a:hover{color:var(--gold)}
+@media(max-width:640px){.shelf{overflow-x:auto;flex-wrap:nowrap}.shelf button{flex:0 0 auto}.vitals{margin-left:20px;margin-right:20px}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">DISEASE <span>CHRONICLES</span></div>
+  <div class="right">
+    <div class="tag mono"><span class="uz-text">Kasalliklar Arxivi · 2026</span><span class="en-text">Disease Archive · 2026</span></div>
+    <div class="lang-toggle"><button class="lang-btn active" data-lang="uz">UZ</button><button class="lang-btn" data-lang="en">EN</button></div>
+  </div>
+</div>
+
+<div id="home-view">
+<section class="hero">
+  <div class="eyebrow"><span class="uz-text">Insoniyat kasalliklari arxivi</span><span class="en-text">An archive of human illness</span></div>
+  <h1><span class="uz-text">La'natdan davolanishgacha — har bir kasallik o'z tarixi bilan.</span><span class="en-text">From curse to cure, one disease at a time.</span></h1>
+  <p><span class="uz-text">Har bir kasallikning o'z tarjimai holi bor — dastlabki qaydlardan ilmiy kashfiyotlargacha va zamonaviy tibbiyotgacha. Bu yerda o'sha tarixlar saqlanadi.</span><span class="en-text">Every disease has a biography — from early records and mistaken beliefs to scientific discovery and modern medicine.</span></p>
+  <div class="stampline"><div class="stat"><b>7</b><span class="uz-text">Kategoriya</span><span class="en-text">Categories</span></div><div class="stat"><b>8</b><span class="uz-text">Ish fayli</span><span class="en-text">Case files</span></div><div class="stat"><b>UZ / EN</b><span class="uz-text">Ikki tilli arxiv</span><span class="en-text">Bilingual archive</span></div></div>
+</section>
+<nav class="shelf mono" id="shelf">
+<button class="active" data-cat="all"><span class="uz-text">Barchasi</span><span class="en-text">All Files</span></button>
+<button data-cat="neuro">Neurological</button><button data-cat="onco">Oncological</button><button data-cat="genetic">Genetic</button><button data-cat="infectious">Infectious</button><button data-cat="cardio">Cardiovascular</button><button data-cat="autoimmune">Autoimmune</button><button data-cat="endocrine">Endocrine</button>
+</nav>
+<section class="archive" id="archive"></section>
+<footer><span><span class="uz-text">© 2026 Disease Chronicles — mustaqil tadqiqot va yozuv loyihasi</span><span class="en-text">© 2026 Disease Chronicles — an independent research & writing project</span></span><span>BrainVerse</span></footer>
+</div>
+
+<div id="case-view">
+<button class="back-link" id="backBtn"><span class="uz-text">← Arxivga qaytish</span><span class="en-text">← Back to the archive</span></button>
+<section class="case-hero"><div class="eyebrow" id="caseEyebrow"></div><h1 id="caseTitle"></h1><p class="sub" id="caseSubtitle"></p></section>
+<div class="vitals" id="caseVitals"></div>
+<div class="case-content" id="caseContent"></div>
+</div>
+
+<script>
+const diseases = [
+{
+ id:"epilepsy",cat:"neuro",no:"001",year:"~400 BCE",statusUZ:"O'rganilmoqda",statusEN:"Under Study",stamp:"gold",
+ nameUZ:"Epilepsiya",nameEN:"Epilepsy",
+ cardUZ:"Bir vaqtlar xudolarning la'nati deb hisoblangan, hozir miyadagi g'ayritabiiy elektr faolligi bilan izohlanadi.",
+ cardEN:"Once attributed to divine forces, epilepsy is now understood through abnormal electrical activity in the brain.",
+ subUZ:"Gippokrat mil.av. IV asrda tutqanoqlarni ilohiy hodisa emas, tabiiy sababga ega bo'lgan tibbiy holat sifatida tushuntirishga uringan.",
+ subEN:"In the 4th century BCE, Hippocrates argued that seizures had natural causes rather than divine origins.",
+ vitals:[
+  ["Birinchi muhim tarixiy qaydlardan","Major early historical account","~400 BCE, Ancient Greece","~400 BCE, Ancient Greece"],
+  ["Tarixiy nomi","Historical name","Muqaddas kasallik","The Sacred Disease"],
+  ["Kategoriya","Category","Nevrologik","Neurological"],
+  ["Holati","Status","Davolash bilan boshqariladi","Manageable with treatment"]
+ ],
+ sections:[
+  {hUZ:"Tarixiy boshlanish",hEN:"Historical beginnings",pUZ:"Qadimgi dunyoda epilepsiya ko'pincha g'ayritabiiy kuchlar bilan bog'langan. Gippokratning “Muqaddas kasallik” haqidagi qarashlari esa kasallikning tabiiy sabablarini izlashga yo'l ochdi.",pEN:"In the ancient world, epilepsy was often associated with supernatural forces. Hippocrates' discussion of the “Sacred Disease” helped shift attention toward natural causes."},
+  {hUZ:"Miya va tutqanoq",hEN:"The brain and seizures",pUZ:"Epileptik tutqanoq miyada qisqa muddatli, g'ayritabiiy elektr faolligi yuzaga kelganda sodir bo'ladi. Belgilar tutqanoq turiga qarab turlicha bo'lishi mumkin.",pEN:"A seizure occurs when there is a brief episode of abnormal electrical activity in the brain. Symptoms vary according to the type of seizure."},
+  {hUZ:"Davolash",hEN:"Treatment",pUZ:"Zamonaviy tibbiyotda davolash kasallik turiga va bemorning holatiga qarab tanlanadi. Antiseizure medicines ko'p bemorlarda tutqanoqlarni nazorat qilishga yordam beradi; ayrim holatlarda boshqa usullar ham qo'llanadi.",pEN:"Modern treatment depends on the type of epilepsy and the individual. Antiseizure medicines can control seizures in many people, while other approaches may be considered in selected cases."},
+  {hUZ:"Vaqt jadvali",hEN:"Timeline",timeline:[
+   ["~400 BCE","Gippokrat “Muqaddas kasallik”ni tabiiy sabablar bilan bog'lashga harakat qildi.","Hippocrates argued for natural explanations of the “Sacred Disease.”"],
+   ["1870s–1900s","Nevrologiya rivojlanishi bilan epilepsiya miya faoliyati bilan tobora ko'proq bog'landi.","As neurology developed, epilepsy became increasingly understood as a disorder of brain function."],
+   ["20-asr","EEG va antiseizure dorilar diagnostika va davolashni tubdan o'zgartirdi.","EEG and antiseizure medicines transformed diagnosis and treatment during the 20th century."]
+  ]}
+ ],
+ sources:[["Epilepsy Foundation","https://www.epilepsy.com/what-is-epilepsy"],["WHO — Epilepsy","https://www.who.int/news-room/fact-sheets/detail/epilepsy"]]
+},
+{
+ id:"alzheimer",cat:"neuro",no:"002",year:"1906",statusUZ:"Progressiv",statusEN:"Progressive",stamp:"",
+ nameUZ:"Altsgeymer kasalligi",nameEN:"Alzheimer's Disease",
+ cardUZ:"1906-yilda Alois Alzheimer xotira va xulq-atvor o'zgarishlari bilan kechgan g'ayrioddiy holatni tasvirladi.",
+ cardEN:"In 1906, Alois Alzheimer described an unusual illness involving memory and behavioral changes.",
+ subUZ:"1906-yilda Alois Alzheimer Auguste Deter ismli bemorning miyasida keyinchalik amyloid plaques va tau tangles deb atalgan o'zgarishlarni tasvirladi.",
+ subEN:"In 1906, Alois Alzheimer described brain changes in Auguste Deter that later became known as amyloid plaques and neurofibrillary tangles.",
+ vitals:[["Birinchi mashhur klinik tasvir","First landmark description","1906, Germaniya","1906, Germany"],["Nom berilgan shaxs","Namesake","Alois Alzheimer","Alois Alzheimer"],["Kategoriya","Category","Nevrologik","Neurological"],["Holati","Status","Progressiv; tadqiqot davom etmoqda","Progressive; research ongoing"]],
+ sections:[
+  {hUZ:"Auguste Deter va 1906-yil",hEN:"Auguste Deter and 1906",pUZ:"Alois Alzheimer g'ayrioddiy ruhiy kasallik bilan og'rigan Auguste Deterning holatini o'rgandi. U bemorda xotira yo'qolishi, til bilan bog'liq muammolar va oldindan aytib bo'lmaydigan xatti-harakatlarni kuzatdi. Bemor vafotidan keyin uning miya to'qimasi tekshirildi.",pEN:"Alois Alzheimer studied Auguste Deter, a patient with an unusual mental illness. She had memory loss, language problems and unpredictable behavior. After her death, Alzheimer examined her brain tissue."},
+  {hUZ:"Miyadagi o'zgarishlar",hEN:"Changes in the brain",pUZ:"Mikroskopik tekshiruvlarda amyloid plaques va neurofibrillary tangles deb ataladigan o'zgarishlar aniqlangan. Ular bugungi kunda Altsgeymer kasalligining asosiy patologik belgilaridan hisoblanadi.",pEN:"Microscopic examination revealed abnormalities now called amyloid plaques and neurofibrillary tangles. These remain important pathological features of Alzheimer's disease."},
+  {hUZ:"Belgilar va rivojlanish",hEN:"Symptoms and progression",pUZ:"Kasallik odatda xotira va fikrlashning asta-sekin yomonlashuvi bilan bog'liq. Vaqt o'tishi bilan kundalik faoliyat, til va mustaqillik ham ta'sirlanishi mumkin.",pEN:"The disease commonly involves gradual decline in memory and thinking. Over time, daily activities, language and independence can also be affected."},
+  {hUZ:"Vaqt jadvali",hEN:"Timeline",timeline:[["1906","Alois Alzheimer Auguste Deter holatini va uning miya to'qimasidagi g'ayritabiiy o'zgarishlarni taqdim etdi.","Alois Alzheimer presented the case of Auguste Deter and abnormal changes in her brain tissue."],["1910","Emil Kraepelin kasallikni “Alzheimer's disease” nomi bilan bog'lashga yordam berdi.","Emil Kraepelin helped establish the name “Alzheimer's disease.”"],["1980-yillar","Altsgeymer bo'yicha zamonaviy biomedikal tadqiqotlar tezlashdi.","Modern biomedical research into Alzheimer's accelerated."],["Hozir","Biomarkerlar, diagnostika va yangi davolash usullari faol tadqiq qilinmoqda.","Biomarkers, diagnosis and new treatments remain active research areas."]]}
+ ],
+ sources:[["NIA — Alzheimer's Disease Fact Sheet","https://www.nia.nih.gov/health/alzheimers-disease-fact-sheet"],["Nature — History of Alzheimer's Disease","https://www.nature.com/immersive/alzheimers-disease-history/index.html"]]
+},
+{
+ id:"leukemia",cat:"onco",no:"003",year:"1845",statusUZ:"Davolanadi",statusEN:"Treatable",stamp:"sage",
+ nameUZ:"Leykemiya",nameEN:"Leukemia",cardUZ:"1840-yillarda qonning g'ayrioddiy ko'rinishi bilan bog'liq kasallik sifatida tasvirlangan saraton turi.",cardEN:"A cancer of blood-forming tissues whose early modern descriptions emerged in the 1840s.",
+ subUZ:"1845-yilda Rudolf Virchow va John Hughes Bennett deyarli bir vaqtda g'ayritabiiy oq qon holatlarini tasvirladilar; Virchow 1847-yilda “leukemia” atamasini ishlatdi.",
+ subEN:"In 1845, Rudolf Virchow and John Hughes Bennett independently reported abnormal white blood conditions; Virchow coined the term “leukemia” in 1847.",
+ vitals:[["Birinchi muhim qaydlar","Major early reports","1845, Yevropa","1845, Europe"],["Atama","Term","Leukemia — 1847","Leukemia — 1847"],["Kategoriya","Category","Onkologik","Oncological"],["Holati","Status","Ko'plab turlari davolanadi yoki nazorat qilinadi","Many forms are treatable or manageable"]],
+ sections:[
+  {hUZ:"Kasallik qanday kashf etilgan?",hEN:"How was it recognized?",pUZ:"19-asr o'rtalarida ayrim bemorlarning qoni g'ayrioddiy darajada oq ko'rinishi shifokorlar e'tiborini tortdi. Virchow va Bennettning ishlari keyinchalik leykemiya deb ataladigan kasallikni ilmiy tasvirlashga asos bo'ldi.",pEN:"In the mid-19th century, physicians noticed that some patients had unusually pale or “white” blood. The work of Virchow and Bennett helped establish the medical description of what became known as leukemia."},
+  {hUZ:"Leykemiya nima?",hEN:"What is leukemia?",pUZ:"Leykemiya qon hosil qiluvchi to'qimalar, ayniqsa suyak ko'migida g'ayritabiiy qon hujayralari ko'payishi bilan bog'liq saratonlar guruhidir. U o'tkir yoki surunkali, limfoid yoki miyeloid shakllarda bo'lishi mumkin.",pEN:"Leukemia is a group of cancers involving abnormal blood-forming cells, especially in the bone marrow. It can be acute or chronic and lymphoid or myeloid."},
+  {hUZ:"Davolash tarixidagi burilish",hEN:"A turning point in treatment",pUZ:"20-asrda kimyoterapiya va keyinchalik maqsadli davolashlar leykemiya bilan kurashish imkoniyatlarini kengaytirdi. Davolash turi leykemiyaning aniq turiga bog'liq.",pEN:"During the 20th century, chemotherapy and later targeted therapies expanded treatment possibilities. The appropriate treatment depends on the exact type of leukemia."},
+  {hUZ:"Vaqt jadvali",hEN:"Timeline",timeline:[["1845","Virchow va Bennett leykemiyaning dastlabki zamonaviy klinik tasvirlarini berdi.","Virchow and Bennett reported early modern clinical descriptions."],["1847","Virchow “leukemia” atamasini ishlatdi.","Virchow used the term “leukemia.”"],["20-asr","Kimyoterapiya va kombinatsion davolashlar rivojlandi.","Chemotherapy and combination treatments developed."],["Hozir","Molekulyar tasnif va maqsadli terapiyalar davolashni yanada aniqroq qilmoqda.","Molecular classification and targeted therapies are making treatment increasingly precise."]]}
+ ],
+ sources:[["NCBI Bookshelf — Historical Perspective of Leukemia","https://www.ncbi.nlm.nih.gov/books/NBK13428/"],["NCI — Leukemia","https://www.cancer.gov/types/leukemia"]]
+},
+{
+ id:"huntington",cat:"genetic",no:"004",year:"1872",statusUZ:"Irsiy",statusEN:"Hereditary",stamp:"",
+ nameUZ:"Xantington kasalligi",nameEN:"Huntington's Disease",cardUZ:"Bir oilaning avlodlari davomida kuzatilgan harakat va ruhiy o'zgarishlar keyinchalik bitta gen bilan bog'landi.",cardEN:"A hereditary disorder recognized across generations and later linked to a specific genetic mutation.",
+ subUZ:"George Huntington 1872-yilda irsiy xoreya bilan bog'liq oilalarni batafsil tasvirladi. Keyinchalik kasallikning genetik asosi aniqlanib, HTT geni va CAG takrorlari bilan bog'landi.",
+ subEN:"George Huntington described affected families in 1872. Later research linked the disease to the HTT gene and an expanded CAG repeat.",
+ vitals:[["Klassik klinik tasvir","Classic clinical description","1872, AQSh","1872, United States"],["Gen","Gene","HTT","HTT"],["Kategoriya","Category","Genetik","Genetic"],["Meroslanish","Inheritance","Autosomal dominant","Autosomal dominant"]],
+ sections:[
+  {hUZ:"George Huntington",hEN:"George Huntington",pUZ:"George Huntington yosh shifokor sifatida Long Islanddagi oilalarda avloddan-avlodga o'tadigan xoreya, ruhiy va kognitiv o'zgarishlarni kuzatdi. Uning 1872-yildagi “On Chorea” maqolasi kasallikning klassik tavsifiga aylandi.",pEN:"As a young physician, George Huntington observed chorea and psychiatric and cognitive changes recurring across families on Long Island. His 1872 paper “On Chorea” became the classic clinical description."},
+  {hUZ:"Genetik sir",hEN:"The genetic mystery",pUZ:"20-asr oxirida tadqiqotchilar kasallikni 4-xromosomadagi HTT geni bilan bog'lashdi. Genning CAG takrorlari kengayishi Huntington kasalligining asosiy genetik mexanizmidir.",pEN:"Late-20th-century research linked the disease to the HTT gene on chromosome 4. Expansion of CAG repeats is the key genetic mechanism."},
+  {hUZ:"Meroslanish",hEN:"Inheritance",pUZ:"Kasallik autosomal dominant tarzda meros bo'ladi. Ta'sirlangan ota yoki onaning farzandida kengaygan gen variantini meros olish ehtimoli 50 foiz.",pEN:"The disorder is inherited in an autosomal dominant pattern. A child of an affected parent has a 50% chance of inheriting the expanded gene."},
+  {hUZ:"Vaqt jadvali",hEN:"Timeline",timeline:[["1872","George Huntington irsiy xoreyaning klassik tavsifini e'lon qildi.","George Huntington published the classic description of hereditary chorea."],["1970–1980-yillar","Venesueladagi yirik oilalar genetik tadqiqotlar uchun muhim bo'ldi.","Large Venezuelan families became important to genetic research."],["1993","Kasallik bilan bog'liq HTT geni aniqlandi.","The HTT gene responsible for the disorder was identified."],["Hozir","Genetik va simptomatik davolash strategiyalari faol tadqiq qilinmoqda.","Genetic and symptomatic treatment strategies remain active research areas."]]}
+ ],
+ sources:[["Huntington Disease Society of America — History and Genetics","https://hdsa.org/what-is-hd/history-and-genetics-of-huntingtons-disease/"],["PubMed — The story of George Huntington and his disease","https://pubmed.ncbi.nlm.nih.gov/27011624/"]]
+},
+{
+ id:"smallpox",cat:"infectious",no:"005",year:"~3000+ years ago",statusUZ:"Yo'q qilingan",statusEN:"Eradicated",stamp:"sage",
+ nameUZ:"Chechak",nameEN:"Smallpox",cardUZ:"Insoniyat tarixidagi eng dahshatli yuqumli kasalliklardan biri; 1980-yilda butunlay yo'q qilingan.",cardEN:"One of humanity's most devastating infections, officially eradicated in 1980.",
+ subUZ:"Chechak variola virusi sabab bo'lgan yuqumli kasallik edi. Jennerning 1796-yildagi vaksina ishlari va global emlash kampaniyasi uni yo'q qilishga olib keldi.",
+ subEN:"Smallpox was caused by variola virus. Jenner's 1796 vaccination work and the global eradication campaign ultimately eliminated the disease.",
+ vitals:[["Mavjud bo'lgan davr","Historical presence","Kamida ~3000 yil","At least ~3000 years"],["Vaksina","Vaccine milestone","1796, Edward Jenner","1796, Edward Jenner"],["Oxirgi tabiiy holat","Last natural case","1977, Somali","1977, Somalia"],["Holati","Status","1980-yilda yo'q qilingan","Eradicated in 1980"]],
+ sections:[
+  {hUZ:"Qadimiy dushman",hEN:"An ancient enemy",pUZ:"Chechak minglab yillar davomida epidemiyalar va o'limga sabab bo'lgan. WHO ma'lumotlariga ko'ra, kasallik kamida 3000 yil davomida insoniyatga ta'sir ko'rsatgan.",pEN:"Smallpox caused epidemics and deaths for thousands of years. WHO states that the disease had existed for at least 3,000 years."},
+  {hUZ:"Jenner va vaksina",hEN:"Jenner and vaccination",pUZ:"1796-yilda Edward Jenner sigir chechagi bilan kasallangan sut sog'uvchilarda chechakka nisbatan himoya borligini kuzatib, vaksinatsiyaning ilk muvaffaqiyatli namunasini yaratdi.",pEN:"In 1796, Edward Jenner used observations about cowpox and protection from smallpox to develop the first successful vaccine."},
+  {hUZ:"Yo'q qilish kampaniyasi",hEN:"The eradication campaign",pUZ:"WHO 1967-yilda kuchaytirilgan global chechakni yo'q qilish dasturini boshladi. Emlash, kuzatuv va kasallik o'choqlarini tezkor nazorat qilish birgalikda ishladi.",pEN:"WHO launched an intensified global eradication programme in 1967. Vaccination, surveillance and rapid outbreak control worked together."},
+  {hUZ:"Vaqt jadvali",hEN:"Timeline",timeline:[["1796","Edward Jenner chechakka qarshi vaksina g'oyasini amalda ko'rsatdi.","Edward Jenner demonstrated vaccination against smallpox."],["1967","WHO kuchaytirilgan global eradikatsiya dasturini boshladi.","WHO launched the intensified global eradication programme."],["1977","Somalida so'nggi ma'lum tabiiy holat qayd etildi.","The last known natural case occurred in Somalia."],["1980","WHO chechakni dunyodan yo'q qilingan deb e'lon qildi.","WHO declared smallpox eradicated worldwide."]]}
+ ],
+ sources:[["WHO — Smallpox","https://www.who.int/emergencies/situations/smallpox/"],["WHO — History of Smallpox Vaccination","https://www.who.int/news-room/spotlight/history-of-vaccination/history-of-smallpox-vaccination"]]
+},
+{
+ id:"mi",cat:"cardio",no:"006",year:"1912",statusUZ:"Nazorat qilinadi",statusEN:"Manageable",stamp:"sage",
+ nameUZ:"Miokard infarkti",nameEN:"Myocardial Infarction",cardUZ:"Yurak mushagiga qon oqimi to'satdan to'xtaganda yuzaga keladigan holat; 20-asrda uning klinik tushunchasi shakllandi.",cardEN:"A heart attack caused by interrupted blood flow to heart muscle; its modern clinical concept developed in the 20th century.",
+ subUZ:"1912-yilda James B. Herrick koronar arteriyalarning to'satdan berkilishi haqidagi klassik maqolasini taqdim etdi.",
+ subEN:"In 1912, James B. Herrick presented a landmark paper on sudden obstruction of the coronary arteries.",
+ vitals:[["Muhim tarixiy burilish","Major historical milestone","1912, James B. Herrick","1912, James B. Herrick"],["A'zo","Organ","Yurak","Heart"],["Kategoriya","Category","Yurak-qon tomir","Cardiovascular"],["Mexanizm","Mechanism","Qon oqimining keskin kamayishi/to'silishi","Reduced or blocked blood flow"]],
+ sections:[
+  {hUZ:"Yurak xuruji tushunchasi",hEN:"Understanding the heart attack",pUZ:"Miokard infarktida yurak mushagining bir qismiga qon va kislorod yetib borishi keskin kamayadi yoki to'xtaydi. Zamonaviy tibbiyotda bu shoshilinch holat sifatida qaraladi.",pEN:"In myocardial infarction, blood and oxygen supply to part of the heart muscle is severely reduced or blocked. Modern medicine treats it as an emergency."},
+  {hUZ:"1912-yilgi burilish",hEN:"The 1912 turning point",pUZ:"James B. Herrick 1912-yilda koronar arteriyalarning to'satdan berkilishi haqidagi maqolasini taqdim etdi. Bu yurak xurujining klinik tushunchasi tarixidagi muhim bosqich bo'ldi.",pEN:"James B. Herrick presented a paper in 1912 on sudden obstruction of the coronary arteries. It became an important milestone in the clinical understanding of heart attack."},
+  {hUZ:"Zamonaviy davolash",hEN:"Modern treatment",pUZ:"Bugungi shoshilinch yordam qon oqimini imkon qadar tez tiklash, yurak mushagining zararlanishini kamaytirish va keyingi xavflarni nazorat qilishga qaratiladi.",pEN:"Modern emergency care aims to restore blood flow as quickly as possible, limit heart-muscle damage and reduce future risk."},
+  {hUZ:"Vaqt jadvali",hEN:"Timeline",timeline:[["1910–1912","Koronar tromboz va infarktning klinik tavsiflari rivojlandi.","Clinical descriptions of coronary thrombosis and infarction developed."],["20-asr","EKG va laborator diagnostika yurak xurujini aniqlashni yaxshiladi.","ECG and laboratory diagnostics improved recognition."],["Keyingi davr","Koronar angiografiya, reperfuziya va stentlash kabi usullar rivojlandi.","Coronary angiography, reperfusion and stenting advanced care."]]}
+ ],
+ sources:[["NCBI Bookshelf — Herrick and Heart Disease","https://www.ncbi.nlm.nih.gov/books/NBK714/"],["American Heart Association — Heart Attack","https://www.heart.org/en/health-topics/heart-attack"]]
+},
+{
+ id:"t1d",cat:"autoimmune",no:"007",year:"1889–1921",statusUZ:"Surunkali",statusEN:"Chronic",stamp:"",
+ nameUZ:"1-turdagi qandli diabet",nameEN:"Type 1 Diabetes",cardUZ:"Immun tizimi insulin ishlab chiqaruvchi beta hujayralarga zarar yetkazadi; 1921-yildagi insulin kashfiyoti tarixni o'zgartirdi.",cardEN:"An autoimmune disease in which insulin-producing beta cells are destroyed; insulin discovery transformed its history.",
+ subUZ:"Oshqozon osti bezining diabetdagi roli 19-asr oxirida aniqlashtirildi, 1921-yildagi insulin kashfiyoti esa 1-tur diabet bilan yashash imkonini keskin o'zgartirdi.",
+ subEN:"The role of the pancreas in diabetes became clearer in the late 19th century, while the discovery of insulin in 1921 transformed life with type 1 diabetes.",
+ vitals:[["Muhim tarixiy davr","Major historical period","1889–1921","1889–1921"],["Asosiy gormon","Key hormone","Insulin","Insulin"],["Kategoriya","Category","Autoimmun","Autoimmune"],["Holati","Status","Surunkali; insulin bilan boshqariladi","Chronic; managed with insulin"]],
+ sections:[
+  {hUZ:"Insulin kashfiyotidan oldin",hEN:"Before insulin",pUZ:"Insulin mavjud bo'lmagan davrda og'ir diabet, ayniqsa bolalarda, juda qisqa umr bilan yakunlanishi mumkin edi. Oshqozon osti bezining kasallikdagi roli asta-sekin aniqlangan.",pEN:"Before insulin, severe diabetes—especially in children—could lead to a very short life. The role of the pancreas was gradually uncovered."},
+  {hUZ:"1921-yil",hEN:"1921",pUZ:"Frederick Banting va Charles Best John Macleod laboratoriyasida oshqozon osti bezidan olingan ekstrakt bilan tajribalar o'tkazdilar. J.B. Collip ekstraktni tozalashda muhim rol o'ynadi.",pEN:"Frederick Banting and Charles Best conducted experiments with pancreatic extracts in John Macleod's laboratory. J.B. Collip played a crucial role in improving purification."},
+  {hUZ:"Insulin hayotni o'zgartirdi",hEN:"Insulin changed the story",pUZ:"1921-yildagi kashfiyotdan so'ng insulin klinik foydalanishga o'tdi. NIDDK bu kashfiyot 1-tur diabet tashxisi qo'yilgan bolalarning voyaga yetish imkonini berganini ta'kidlaydi.",pEN:"After the 1921 discovery, insulin entered clinical use. NIDDK notes that the breakthrough allowed children diagnosed with type 1 diabetes to live into adulthood."},
+  {hUZ:"Vaqt jadvali",hEN:"Timeline",timeline:[["1889","Oshqozon osti bezining diabetdagi muhim roli tajribalar orqali ko'rsatildi.","Experiments demonstrated the pancreas' crucial role in diabetes."],["1921","Banting va Best insulin bo'yicha asosiy tajribalarni boshladi.","Banting and Best began the key insulin experiments."],["1922","Tozalangan insulin insonlarda muvaffaqiyatli qo'llanildi.","Purified insulin was successfully used in humans."],["1923","Insulinning tijoriy ishlab chiqarilishi boshlandi.","Commercial insulin production began."]]}
+ ],
+ sources:[["NIDDK — Celebrating the discovery and development of insulin","https://www.niddk.nih.gov/news/archive/2021/celebrating-discovery-development-insulin"],["FDA — 100 Years of Insulin","https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin"]]
+},
+{
+ id:"t2d",cat:"endocrine",no:"008",year:"~1550 BCE",statusUZ:"Oldini olish mumkin",statusEN:"Preventable",stamp:"gold",
+ nameUZ:"2-turdagi qandli diabet",nameEN:"Type 2 Diabetes",cardUZ:"Qadimiy tibbiy yozuvlarda ko'p siyish kabi belgilar tasvirlangan; zamonaviy 2-tur diabet esa insulin qarshiligi va yetishmovchiligi bilan bog'liq.",cardEN:"Ancient medical texts described symptoms such as excessive urination; modern type 2 diabetes involves insulin resistance and relative insulin deficiency.",
+ subUZ:"Ebers papirusida mil.av. taxminan 1550-yillarga oid ortiqcha siyish haqidagi yozuvlar bor. Biroq bu qadimgi yozuvni aynan 2-tur diabet deb qat'iy belgilash to'g'ri emas.",
+ subEN:"The Ebers Papyrus, dated to around 1550 BCE, contains descriptions of excessive urination. However, it would be too strong to label the ancient description definitively as type 2 diabetes.",
+ vitals:[["Eng qadimgi tibbiy manbalardan","Among earliest medical records","~1550 BCE, Ebers Papyrus","~1550 BCE, Ebers Papyrus"],["Kategoriya","Category","Endokrin","Endocrine"],["Asosiy muammo","Core problem","Insulin resistance / relative deficiency","Insulin resistance / relative deficiency"],["Holati","Status","Surunkali; boshqarish va oldini olish mumkin","Chronic; manageable and partly preventable"]],
+ sections:[
+  {hUZ:"Qadimgi Misr",hEN:"Ancient Egypt",pUZ:"Ebers papirusida haddan tashqari ko'p siyish bilan bog'liq tibbiy tavsiflar uchraydi. Tadqiqotchilar bu belgilar diabetga mos kelishi mumkinligini ta'kidlaydi, ammo qadimgi matnni bugungi diabet turlaridan biriga aniq tenglashtirish ehtiyotkorlikni talab qiladi.",pEN:"The Ebers Papyrus contains medical descriptions involving excessive urination. Researchers note that such symptoms may fit diabetes, but mapping an ancient description directly onto a modern diabetes subtype requires caution."},
+  {hUZ:"2-tur diabet nima?",hEN:"What is type 2 diabetes?",pUZ:"2-tur diabetda organizm insulin ta'siriga yetarlicha javob bermaydi va vaqt o'tishi bilan insulin ishlab chiqarish ham yetarli bo'lmasligi mumkin. Natijada qondagi glyukoza miqdori oshadi.",pEN:"In type 2 diabetes, the body does not respond adequately to insulin and insulin production may also become insufficient over time, leading to elevated blood glucose."},
+  {hUZ:"Zamonaviy epidemiya",hEN:"A modern epidemic",pUZ:"Bugungi kunda 2-tur diabet dunyo bo'ylab katta sog'liq muammosidir. Jismoniy faollik, ovqatlanish, tana vazni va genetik moyillik kabi omillar xavfga ta'sir qilishi mumkin.",pEN:"Today, type 2 diabetes is a major global health problem. Physical activity, diet, body weight and genetic susceptibility can influence risk."},
+  {hUZ:"Vaqt jadvali",hEN:"Timeline",timeline:[["~1550 BCE","Ebers papirusida ko'p siyish bilan bog'liq qadimgi tibbiy tavsiflar mavjud.","The Ebers Papyrus contains an ancient description involving excessive urination."],["Qadimgi Yunoniston","“Diabetes” atamasi keyingi davrlarda siydikning ko'pligi bilan bog'liq ma'noda ishlatila boshlandi.","The term “diabetes” later came to describe excessive passage of urine."],["20-asr","Insulin va glyukoza almashinuvi haqidagi bilimlar keskin rivojlandi.","Knowledge of insulin and glucose metabolism advanced rapidly."],["Hozir","Oldini olish, erta aniqlash va yangi dori vositalari muhim yo'nalishlar bo'lib qolmoqda.","Prevention, early detection and newer medicines remain major areas of progress."]]}
+ ],
+ sources:[["PubMed — A history of diabetes: from antiquity to discovering insulin","https://pubmed.ncbi.nlm.nih.gov/14581842/"],["NIDDK — Diabetes overview","https://www.niddk.nih.gov/health-information/diabetes"]]
+}
+];
+
+const homeView=document.getElementById('home-view');
+const caseView=document.getElementById('case-view');
+const archive=document.getElementById('archive');
+let currentLang='uz';
+
+function txt(uz,en){return currentLang==='uz'?uz:en}
+
+function renderCards(filter='all'){
+ archive.innerHTML='';
+ diseases.filter(d=>filter==='all'||d.cat===filter).forEach(d=>{
+  const card=document.createElement('article');
+  card.className='card';card.tabIndex=0;card.dataset.cat=d.cat;card.dataset.case=d.id;
+  const stamp=d.stamp?`<div class="stamp ${d.stamp}">${txt(d.statusUZ,d.statusEN)}</div>`:`<div class="stamp">${txt(d.statusUZ,d.statusEN)}</div>`;
+  card.innerHTML=`${stamp}<div class="rowtop"><span>${d.cat==='neuro'?'Neurological':d.cat==='onco'?'Oncological':d.cat==='genetic'?'Genetic':d.cat==='infectious'?'Infectious':d.cat==='cardio'?'Cardiovascular':d.cat==='autoimmune'?'Autoimmune':'Endocrine'}</span><span>№ ${d.no}</span></div><h3>${txt(d.nameUZ,d.nameEN)}</h3><p>${txt(d.cardUZ,d.cardEN)}</p><div class="foot"><span>${d.year}</span><span>${txt("Ish faylini o'qish →","Read case file →")}</span></div>`;
+  card.addEventListener('click',()=>openCase(d.id));card.addEventListener('keypress',e=>{if(e.key==='Enter')openCase(d.id)});
+  archive.appendChild(card);
+ });
+}
+
+function openCase(id){
+ const d=diseases.find(x=>x.id===id); if(!d)return;
+ homeView.classList.add('hidden');caseView.classList.add('active');window.scrollTo(0,0);
+ document.getElementById('caseEyebrow').textContent=`№ ${d.no} · ${d.cat==='neuro'?'Neurological':d.cat==='onco'?'Oncological':d.cat==='genetic'?'Genetic':d.cat==='infectious'?'Infectious':d.cat==='cardio'?'Cardiovascular':d.cat==='autoimmune'?'Autoimmune':'Endocrine'}`;
+ document.getElementById('caseTitle').innerHTML=txt(d.nameUZ,d.nameEN);
+ document.getElementById('caseSubtitle').innerHTML=txt(d.subUZ,d.subEN);
+ document.getElementById('caseVitals').innerHTML=d.vitals.map(v=>`<div><div class="label">${txt(v[0],v[1])}</div><div class="value">${txt(v[2],v[3])}</div></div>`).join('');
+ let content='';
+ d.sections.forEach((s,i)=>{
+  if(s.timeline){
+   content+=`<section class="section"><h2><span class="no">0${i+1}</span>${txt(s.hUZ,s.hEN)}</h2><div class="timeline">${s.timeline.map(t=>`<div class="tl-item"><div class="era">${t[0]}</div><h4>${txt(t[1],t[2])}</h4></div>`).join('')}</div></section>`;
+  }else{
+   content+=`<section class="section"><h2><span class="no">0${i+1}</span>${txt(s.hUZ,s.hEN)}</h2><p>${txt(s.pUZ,s.pEN)}</p></section>`;
+  }
+ });
+ content+=`<section class="section"><div class="living-box"><h3>${txt("Muhim eslatma","Important note")}</h3><p>${txt("Bu arxiv ta'limiy va tarixiy maqsadda tuzilgan. Tibbiy tashxis yoki davolash bo'yicha individual maslahat o'rnini bosmaydi.","This archive is for educational and historical purposes. It does not replace individual medical diagnosis or treatment advice.")}</p></div></section>`;
+ content+=`<section class="section"><h2><span class="no">SRC</span>${txt("Manbalar","Sources")}</h2><div class="source-list">${d.sources.map(s=>`<a href="${s[1]}" target="_blank" rel="noopener">${s[0]} ↗</a>`).join('')}</div></section>`;
+ document.getElementById('caseContent').innerHTML=content;
+}
+
+document.getElementById('backBtn').addEventListener('click',()=>{caseView.classList.remove('active');homeView.classList.remove('hidden');window.scrollTo(0,0)});
+document.querySelectorAll('.shelf button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.shelf button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderCards(btn.dataset.cat)}));
+document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',()=>{currentLang=btn.dataset.lang;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.uz-text').forEach(el=>el.style.display=currentLang==='uz'?'inline':'none');document.querySelectorAll('.en-text').forEach(el=>el.style.display=currentLang==='en'?'inline':'none');document.documentElement.lang=currentLang;renderCards(document.querySelector('.shelf button.active').dataset.cat)}));
+renderCards();
+</script>
+</body>
+</html>
