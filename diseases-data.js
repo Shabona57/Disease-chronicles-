@@ -258,7 +258,117 @@ const DISEASES = [
     hook: { uz: "Bitta oilaning necha avlodi davomida kuzatilgan — endi esa bitta o'zgargan gen orqali izohlanadi.",
             en: "Traced across generations of a single family — and now, across a single mutated gene." },
     year: { uz: "1872", en: "1872" },
-    detail: null
+    detail: {
+  quote: {
+    uz: "1872-yilda Jorj Xantington bu kasallikni tasvirlaganida, u bir oilada avloddan-avlodga o'tadigan g'alati harakatlar va ruhiy o'zgarishlarni kuzatgan edi. Bugun esa biz bu kasallikning sababini aniq bilamiz: 4-xromosomadagi HTT genidagi mutatsiya.",
+    en: "When George Huntington described the disease in 1872, he was observing strange movements and mental changes that seemed to pass from generation to generation within families. Today, we know its precise genetic cause: a mutation in the HTT gene on chromosome 4."
+  },
+
+  vitals: [
+    {
+      label: { uz: "Birinchi ilmiy tasvir", en: "First scientific description" },
+      value: { uz: "1872, AQSh", en: "1872, United States" }
+    },
+    {
+      label: { uz: "Sababchi gen", en: "Causative gene" },
+      value: { uz: "HTT geni, 4-xromosoma", en: "HTT gene, chromosome 4" }
+    },
+    {
+      label: { uz: "Irsiylanish turi", en: "Inheritance pattern" },
+      value: { uz: "Autosom-dominant", en: "Autosomal dominant" }
+    },
+    {
+      label: { uz: "Holati", en: "Status" },
+      value: { uz: "Progressiv, hozircha to'liq davosi yo'q", en: "Progressive, no cure yet" }
+    }
+  ],
+       sections: [
+    {
+      type: "text",
+      no: "01",
+      heading: { uz: "Kelib chiqish sabablari", en: "Origins & Causes" },
+      paragraphs: [
+        {
+          uz: "Xantington kasalligi — asosan miya hujayralarini zararlaydigan irsiy neyrodegenerativ kasallik. Uning sababi 4-xromosomada joylashgan HTT genidagi mutatsiyadir. Bu genda CAG deb ataladigan uchta DNK harfining ketma-ketligi odatdagidan juda ko'p marta takrorlanadi. Natijada hujayralarda g'ayritabiiy shakldagi huntingtin oqsili hosil bo'lib, vaqt o'tishi bilan ayrim neyronlarning faoliyati buziladi va ular nobud bo'la boshlaydi.",
+          en: "Huntington's disease is an inherited neurodegenerative disorder that primarily damages brain cells. It is caused by a mutation in the HTT gene on chromosome 4. In this gene, a sequence of three DNA letters called CAG is repeated far more times than normal. The expanded sequence produces an altered form of the huntingtin protein, which gradually disrupts the function of certain neurons and eventually contributes to their death."
+        },
+        {
+          uz: "Kasallikning eng muhim xususiyatlaridan biri uning autosom-dominant tarzda irsiylanishidir. Ya'ni kasallikka sabab bo'luvchi mutatsiyaga ega bo'lgan ota yoki onaning har bir farzandiga ushbu mutatsiyani meros qilib berish ehtimoli 50 foizni tashkil qiladi. Kasallik odatda katta yoshda, ko'pincha 30–50 yoshlar oralig'ida namoyon bo'ladi, lekin boshlanish yoshi odamdan odamga farq qilishi mumkin. Ba'zi oilalarda keyingi avlodlarda kasallik ertaroq boshlanishi mumkin — bu hodisa genetik anticipation deb ataladi.",
+          en: "One of the disease's defining features is its autosomal dominant inheritance. This means that a parent carrying the disease-causing mutation has a 50 percent chance of passing it to each child. Symptoms most often begin in adulthood, commonly between the ages of 30 and 50, although the age of onset varies from person to person. In some families, the disease can appear at a younger age in successive generations, a phenomenon known as genetic anticipation."
+        }
+      ]
+    },
+          {
+      type: "timeline",
+      no: "02",
+      heading: { uz: "Tushuncha qanday o'zgargan", en: "How Understanding Changed" },
+      items: [
+        {
+          era: { uz: "1872 — AQSh", en: "1872 — United States" },
+          title: { uz: "Xantington kasallikni tasvirlaydi", en: "Huntington describes the disease" },
+          text: {
+            uz: "Amerikalik shifokor Jorj Xantington 22 yoshida o'zining eng mashhur tibbiy maqolasini yozib, Long-Aylenddagi ayrim oilalarda avloddan-avlodga o'tib kelayotgan g'alati harakatlar, ruhiy o'zgarishlar va xulq-atvor buzilishlarini tasvirladi. U kasallikning irsiy xususiyatini ham payqagan edi. Uning qisqa maqolasi keyinchalik Xantington kasalligi deb ataladigan holatning klassik tavsifiga aylandi.",
+            en: "At just 22 years old, American physician George Huntington published his famous description of a disorder affecting families on Long Island. He described involuntary movements, mental changes, and behavioral disturbances that appeared across generations. He also recognized its hereditary nature. His short paper eventually became the classic description of what is now known as Huntington's disease."
+          }
+        },
+
+        {
+          era: { uz: "1900-yillarning boshi — o'rtalari", en: "Early–mid 20th century" },
+          title: { uz: "Kasallik miyaga bog'liqligi aniqroq bo'ladi", en: "The brain connection becomes clearer" },
+          text: {
+            uz: "Keyingi o'n yilliklarda shifokorlar kasallikning faqat g'alati harakatlardan iborat emasligini tushuna boshladilar. Bemorlar xotira, fikrlash, kayfiyat va xulq-atvor bilan bog'liq o'zgarishlarni ham boshdan kechirishi mumkin edi. Miya to'qimalarini tekshirish esa ayniqsa bazal gangliyalar deb ataladigan harakatlarni boshqarishda muhim bo'lgan hududlarning zararlanishini ko'rsatdi.",
+            en: "Over the following decades, doctors realized that the disease was much more than unusual movements. Patients could also develop changes in memory, thinking, mood, and behavior. Examination of brain tissue revealed particularly severe damage in regions called the basal ganglia, which play an important role in controlling movement and other brain functions."
+          }
+        },
+
+             {
+                era: { uz: "1983 — AQSh", en: "1983 — United States" },
+          title: { uz: "Kasallik geni xaritada topiladi", en: "The disease gene is mapped" },
+          text: {
+            uz: "Olimlar Xantington kasalligini keltirib chiqaruvchi genetik nuqsonni 4-xromosomaning ma'lum bir qismiga bog'lashga muvaffaq bo'lishdi. Bu molekulyar genetika uchun katta qadam edi: endi tadqiqotchilar kasallikning faqat belgilarini emas, balki uning genetik ildizini ham izlashlari mumkin edi.",
+            en: "Scientists successfully linked the genetic defect responsible for Huntington's disease to a specific region of chromosome 4. This was a major breakthrough in molecular genetics because researchers could now investigate not only the symptoms of the disease, but also its genetic roots."
+          }
+        },
+
+        {
+          era: { uz: "1993 — AQSh", en: "1993 — United States" },
+          title: { uz: "HTT geni aniqlanadi", en: "The HTT gene is identified" },
+          text: {
+            uz: "1993-yilda katta xalqaro tadqiqotchilar guruhi Xantington kasalligiga sabab bo'luvchi genni aniqladi. Gen keyinchalik HTT deb nomlandi. Olimlar unda CAG ketma-ketligining g'ayritabiiy darajada ko'p takrorlanishini topdilar. Bu kashfiyot kasallikni molekulyar darajada tushunish va genetik testlarni rivojlantirish uchun yangi davrni boshlab berdi.",
+            en: "In 1993, a large international team of researchers identified the gene responsible for Huntington's disease. It was later named HTT. The researchers discovered an unusually large expansion of repeated CAG sequences within the gene. This breakthrough opened a new era in understanding the disease at the molecular level and developing genetic testing."
+          }
+        },
+
+        {
+          era: { uz: "2000-yillar — Bugungi kun", en: "2000s — Today" },
+          title: { uz: "Genetikadan nishonli davolash sari", en: "From genetics toward targeted treatment" },
+          text: {
+            uz: "HTT genining aniqlanishi olimlarga kasallik mexanizmini chuqurroq o'rganish imkonini berdi. Bugungi tadqiqotlarning katta qismi g'ayritabiiy huntingtin oqsilini kamaytirish, uning hujayralarga zararini cheklash va kasallik rivojlanishini sekinlashtirishga qaratilgan. Genni nishonga oluvchi turli usullar, jumladan antisense oligonukleotidlar va boshqa gen-silencing yondashuvlari o'rganilmoqda. Hozircha kasallikni to'liq to'xtatib yoki yo'q qilib yuboradigan tasdiqlangan davo mavjud emas.",
+            en: "Identifying the HTT gene allowed scientists to investigate the disease mechanism in much greater detail. Today, many research efforts focus on reducing abnormal huntingtin, limiting its damage to cells, and slowing disease progression. Gene-targeting approaches, including antisense oligonucleotides and other gene-silencing strategies, are being investigated. At present, there is still no approved treatment that completely stops or eliminates the disease."
+          }
+        }
+      ]
+    },
+
+     {
+        type: "living",
+      no: "03",
+      heading: { uz: "Bugun bu kasallik bilan yashash", en: "Living With It Today" },
+      title: {
+        uz: "Harakatdan tashqari, butun shaxsiyatga ta'sir qiluvchi kasallik",
+        en: "A disease that affects far more than movement"
+      },
+      text: {
+        uz: "Xantington kasalligi bilan yashash murakkab, chunki u bir vaqtning o'zida harakat, fikrlash va ruhiy holatga ta'sir qilishi mumkin. Dastlab odamda qo'l-oyoqlarning ixtiyorsiz harakatlari, muvozanat bilan bog'liq muammolar yoki nozik motorikadagi o'zgarishlar paydo bo'lishi mumkin. Keyinchalik qaror qabul qilish, diqqatni jamlash, xotira, kayfiyat va kundalik vazifalarni bajarish qobiliyati ham o'zgarishi mumkin. Shu sababli bemorga nevrolog, psixolog yoki psixiatr, fizioterapevt, nutq terapevti va boshqa mutaxassislardan iborat jamoaviy yordam kerak bo'lishi mumkin. Kasallik irsiy bo'lgani uchun uning ta'siri faqat bitta bemor bilan cheklanmaydi — butun oila genetik maslahat, ruhiy qo'llab-quvvatlash va kelajak haqidagi murakkab qarorlar bilan yuzlashishi mumkin. Shunga qaramay, genetikaning aniqlangani tadqiqotchilarga kasallikning ildiziga aniqroq nishon olish imkonini berdi va Xantington kasalligi bugungi kunda neyroshunoslikdagi eng faol o'rganilayotgan genetik kasalliklardan biridir.",
+        en: "Living with Huntington's disease is challenging because it can affect movement, thinking, and emotional health at the same time. Early on, a person may develop involuntary movements, balance problems, or changes in fine motor control. As the disease progresses, decision-making, concentration, memory, mood, and the ability to manage everyday tasks can also be affected. For this reason, patients may need coordinated support from neurologists, mental-health professionals, physiotherapists, speech therapists, and other specialists. Because the disease is inherited, its impact extends beyond one patient — entire families may face genetic counseling, emotional challenges, and difficult decisions about the future. Yet identifying the genetic cause has given researchers a much clearer target, making Huntington's disease one of the most actively studied genetic disorders in modern neuroscience."
+      }
+    }
+  ],
+       nextCase: {
+uz: "Keyingi ish fayli: Chechak (tez orada)",
+en: "Next case: Smallpox (coming soon)"
+}
+         }
   },
   {
     id: "smallpox", caseNo: "005", category: "infectious", categoryLabel: "Infectious", stampStyle: "sage",
