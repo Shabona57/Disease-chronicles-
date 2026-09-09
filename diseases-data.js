@@ -691,7 +691,159 @@ en: "Next case: Smallpox (coming soon)"
     hook: { uz: "Tananing o'z himoya tizimi oshqozon osti beziga qarshi chiqadi — 1921-yilgi kashfiyot bemorlarga o'nlab yillar qaytardi.",
             en: "The body's own defenses turn against the pancreas — until a 1921 discovery gave patients decades back." },
     year: { uz: "1889", en: "1889" },
-    detail: null
+    detail: {
+  quote: {
+    uz: "1921-yilgacha 1-turdagi qandli diabet tashxisi deyarli o'lim hukmi edi. Insulinning kashf etilishi esa bu kasallik tarixini butunlay o'zgartirib yubordi.",
+    en: "Until 1921, a diagnosis of type 1 diabetes was essentially a death sentence. The discovery of insulin completely changed the course of the disease."
+  },
+
+  vitals: [
+    {
+      label: { uz: "Ilmiy burilish", en: "Scientific breakthrough" },
+      value: { uz: "1889, pankreas va diabet o'rtasidagi bog'liqlik", en: "1889, the link between the pancreas and diabetes" }
+    },
+    {
+      label: { uz: "Insulin kashfiyoti", en: "Insulin discovery" },
+      value: { uz: "1921, Toronto, Kanada", en: "1921, Toronto, Canada" }
+    },
+    {
+      label: { uz: "Asosiy muammo", en: "Core problem" },
+      value: { uz: "Immun tizimi insulin ishlab chiqaruvchi beta-hujayralarga hujum qiladi", en: "The immune system attacks insulin-producing beta cells" }
+    },
+    {
+      label: { uz: "Holati", en: "Status" },
+      value: { uz: "Surunkali, insulin bilan boshqariladi; to'liq davosi yo'q", en: "Chronic, manageable with insulin; no cure yet" }
+    }
+  ],
+
+  sections: [
+    {
+      type: "text",
+      no: "01",
+      heading: {
+        uz: "Kelib chiqish sabablari",
+        en: "Origins & Causes"
+      },
+      paragraphs: [
+         {
+            uz: "1-turdagi qandli diabetda muammo oddiygina qonda shakar ko'payib ketishidan iborat emas — uning markazida insulin yetishmovchiligi turadi. Insulin oshqozon osti bezidagi Langerhans orolchalarining beta-hujayralari tomonidan ishlab chiqariladigan gormon bo'lib, u glyukozaning qondan hujayralarga kirib, energiya sifatida ishlatilishiga yordam beradi. 1-turdagi diabetda immun tizimi xato qilib aynan shu beta-hujayralarni begona narsa deb qabul qiladi va ularga hujum qiladi. Vaqt o'tishi bilan insulin ishlab chiqarish keskin kamayadi yoki deyarli butunlay to'xtaydi. Natijada glyukoza hujayralarga yetarlicha kira olmaydi va qonda to'planib boradi.",
+          en: "Type 1 diabetes is not simply a problem of having too much sugar in the blood — at its core is a severe lack of insulin. Insulin is a hormone produced by beta cells in the pancreatic islets, and it helps glucose move from the bloodstream into cells where it can be used for energy. In type 1 diabetes, the immune system mistakenly identifies these beta cells as a threat and attacks them. Over time, insulin production falls dramatically or stops almost completely. Glucose can no longer enter cells properly and begins accumulating in the bloodstream."
+        },
+        {
+          uz: "Kasallikning aniq sababi hali to'liq tushunilmagan. Genetik moyillik muhim rol o'ynaydi, ammo ma'lum bir genning mavjudligi kasallik albatta rivojlanadi degani emas. Olimlar ayrim virusli infeksiyalar yoki boshqa atrof-muhit omillari immun tizimidagi ushbu noto'g'ri reaksiyani qo'zg'atishi mumkin deb hisoblaydi. Muhim jihati shundaki, 1-turdagi diabetni shirinlik ko'p yeyish, dangasalik yoki noto'g'ri ovqatlanish keltirib chiqarmaydi. U bolalar va o'smirlarda ko'proq aniqlansa-da, istalgan yoshda boshlanishi mumkin.",
+          en: "The exact cause of type 1 diabetes is still not fully understood. Genetic susceptibility plays an important role, but carrying certain genes does not mean that a person will definitely develop the disease. Researchers believe that environmental triggers, including some viral infections, may help activate the mistaken immune response. Crucially, type 1 diabetes is not caused by eating too much sugar, being inactive, or having an unhealthy diet. Although it is often diagnosed in children and teenagers, it can begin at any age."
+        }
+      ]
+    },
+
+    {
+      type: "timeline",
+      no: "02",
+      heading: {
+        uz: "Tushuncha qanday o'zgargan",
+        en: "How Understanding Changed"
+      },
+      items: [
+        {
+          era: {
+            uz: "Qadimgi davrlar — XIX asr",
+            en: "Antiquity — 19th century"
+          },
+          title: {
+             uz: "Chanqoq, ko'p siyish va tushunarsiz kasallik",
+            en: "Thirst, excessive urination, and a mysterious disease"
+          },
+          text: {
+            uz: "Diabetning ayrim belgilarini insoniyat minglab yillar davomida kuzatib kelgan. Qadimgi hind va misr tibbiyotida haddan tashqari chanqash va ko'p siyish kabi belgilar tasvirlangan. XIX asrga kelib esa shifokorlar diabetni yaxshiroq ajrata boshladilar, ammo uning asl sababi va oshqozon osti bezining roli hali ham sir bo'lib qolayotgan edi. Insulin mavjudligi haqida esa amaliy davolash imkoniyati yo'q edi.",
+            en: "Some symptoms of diabetes had been recognized for thousands of years. Ancient Indian and Egyptian medical writings described excessive thirst and frequent urination. By the 19th century, physicians were becoming better at recognizing diabetes as a distinct condition, but its underlying cause and the role of the pancreas remained a mystery. There was still no practical treatment capable of replacing the missing hormone."
+          }
+        },
+
+        {
+          era: {
+            uz: "1889 — Strasburg",
+            en: "1889 — Strasbourg"
+          },
+          title: {
+            uz: "Pankreas sirning markazida ekanligi aniqlanadi",
+            en: "The pancreas becomes the center of the mystery"
+          },
+          text: {
+            uz: "Oskar Minkovski va Jozef fon Mering itning oshqozon osti bezini olib tashlaganidan keyin hayvonda diabetga o'xshash belgilar paydo bo'lganini kuzatishdi. Bu tajriba pankreas va qondagi glyukoza nazorati o'rtasida kuchli bog'liqlik borligini ko'rsatdi. Keyingi tadqiqotchilar oshqozon osti bezida qondagi shakarni boshqaruvchi qandaydir noma'lum modda mavjud bo'lishi kerak degan fikrga kelishdi. Aynan shu izlanishlar keyinchalik insulin kashfiyotiga olib boradigan ilmiy yo'lni ochdi.",
+            en: "Oskar Minkowski and Joseph von Mering observed that removing a dog's pancreas caused the animal to develop symptoms resembling diabetes. Their experiment revealed a powerful connection between the pancreas and blood-glucose regulation. Researchers began to suspect that the pancreas contained an unknown substance responsible for controlling blood sugar. This line of investigation eventually opened the path toward the discovery of insulin."
+          }
+        },
+
+        {
+          era: {
+            uz: "1921 — Toronto, Kanada",
+            en: "1921 — Toronto, Canada"
+          },
+          title: {
+            uz: "Insulin izidan",
+            en: "The search for insulin"
+          },
+           text: {
+            uz: "Frederick Banting Toronto universitetida professor Jon Makleod bilan bog'lanib, oshqozon osti bezidan diabetni davolashga yordam beradigan moddani ajratish bo'yicha tajribalarni boshladi. Talaba Charlz Best unga yordam berdi. Ular pankreasi olib tashlangan itlarda maxsus pankreatik ekstraktni sinab ko'rib, qondagi glyukoza miqdori pasayganini kuzatishdi. Keyinchalik biokimyogar Jeyms Kollip ekstraktni yanada tozalab, uni insonlarda qo'llashga yaroqli holga keltirishda muhim rol o'ynadi.",
+            en: "At the University of Toronto, Frederick Banting approached professor John Macleod with an idea for isolating a substance from the pancreas that could treat diabetes. Medical student Charles Best joined him in the experiments. They tested pancreatic extracts in dogs whose pancreases had been removed and observed falling blood-glucose levels. Biochemist James Collip later played a crucial role in purifying the extract enough for human use."
+          }
+        },
+
+        {
+          era: {
+            uz: "1922 — Toronto General Hospital",
+            en: "1922 — Toronto General Hospital"
+          },
+          title: {
+            uz: "Insulin birinchi marta bemorni qutqaradi",
+            en: "Insulin saves a patient for the first time"
+          },
+          text: {
+            uz: "1922-yil yanvar oyida 13 yoshli Leonard Tompson insulin ekstrakti bilan davolangan birinchi bemor bo'ldi. Dastlabki ekstrakt yetarlicha toza bo'lmagani sababli natija kutilganidek bo'lmadi. Kollip ekstraktni yanada tozalagach, keyingi in'eksiyalar bemorning qondagi glyukoza darajasini tushirdi va diabetning hayot uchun xavfli belgilarini yengillashtirdi. Bir necha yil oldin bunday tashxis deyarli muqarrar o'lim bilan yakunlangan bo'lsa, endi bemorga hayotini davom ettirish imkoniyati paydo bo'ldi.",
+            en: "In January 1922, 13-year-old Leonard Thompson became the first patient to receive insulin extract as a treatment. The initial preparation was not pure enough and produced disappointing results. After James Collip improved the purification process, later injections lowered Thompson's blood glucose and relieved the dangerous effects of diabetes. A diagnosis that had once meant almost certain death could now be followed by years of life."
+          }
+        },
+
+        {
+          era: {
+            uz: "1923 — Nobel mukofoti va undan keyin",
+            en: "1923 — Nobel Prize and beyond"
+          },
+          title: {
+            uz: "Bir kashfiyot butun kasallik tarixini o'zgartiradi",
+            en: "One discovery changes the history of the disease"
+          },
+          text: {
+             uz: "1923-yilda Frederick Banting va Jon Makleod fiziologiya yoki tibbiyot bo'yicha Nobel mukofotiga sazovor bo'ldi va Banting mukofot pulini Charlz Best bilan, Makleod esa Jeyms Kollip bilan bo'lishdi. Insulin ishlab chiqarishni sanoat miqyosida yo'lga qo'yish esa uni tobora ko'proq bemorlarga yetkazish imkonini berdi. Keyingi o'n yilliklarda insulin turlari, yuborish usullari va qon glyukozasini nazorat qilish texnologiyalari rivojlandi. Bugungi kunda esa tadqiqotlar nafaqat kasallikni boshqarish, balki uning rivojlanishini erta bosqichda kechiktirish va kelajakda beta-hujayralarni saqlab qolish yoki tiklash imkoniyatlarini izlashga ham qaratilgan.",
+            en: "In 1923, Frederick Banting and John Macleod received the Nobel Prize in Physiology or Medicine, with Banting sharing his prize money with Charles Best and Macleod sharing his with James Collip. Industrial production then made insulin available to growing numbers of patients. Over the following decades, insulin formulations, delivery methods, and glucose-monitoring technologies continued to improve. Today, researchers are looking beyond management toward delaying disease progression at an early stage and eventually preserving or restoring insulin-producing beta cells."
+          }
+        }
+      ]
+    },
+
+    {
+      type: "living",
+      no: "03",
+      heading: {
+        uz: "Bugun bu kasallik bilan yashash",
+        en: "Living With It Today"
+      },
+      title: {
+        uz: "Insulin — kundalik hayotning bir qismi",
+        en: "Insulin becomes part of everyday life"
+      },
+      text: {
+        uz: "Bugungi kunda 1-turdagi diabet bilan yashayotgan inson insulin yordamida to'liq va faol hayot kechirishi mumkin. Insulin in'eksiyasi yoki insulin pompasi orqali organizmga kerakli gormon yetkazib beriladi, glyukoza esa muntazam ravishda nazorat qilinadi. Zamonaviy uzluksiz glyukoza monitoringi va insulin pompasi kabi texnologiyalar kundalik boshqaruvni ancha qulaylashtirdi. Shunga qaramay, bu hali ham doimiy e'tibor talab qiladigan kasallik: insulin dozasi, ovqatlanish, jismoniy faollik, stress va boshqa omillar qondagi glyukoza darajasiga ta'sir qilishi mumkin.",
+        en: "Today, people with type 1 diabetes can live full and active lives with insulin therapy. Insulin is supplied through injections or an insulin pump, while glucose levels are monitored regularly. Technologies such as continuous glucose monitors and modern insulin pumps have made day-to-day management much easier. Even so, type 1 diabetes remains a condition that requires constant attention: insulin doses, food, physical activity, stress, and many other factors can all affect blood-glucose levels."
+      }
+    }
+  ],
+
+  nextCase: {
+    uz: "Keyingi ish fayli: 2-turdagi qandli diabet",
+    en: "Next case: Type 2 Diabetes"
+  }
+    }
   },
   {
     id: "t2d", caseNo: "008", category: "endocrine", categoryLabel: "Endocrine", stampStyle: "gold",
