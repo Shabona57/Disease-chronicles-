@@ -377,7 +377,155 @@ en: "Next case: Smallpox (coming soon)"
     hook: { uz: "Yer yuzidan butunlay yo'q qilingan yagona inson kasalligi — va vaksinalar mavjudligining sababi.",
             en: "The only human disease ever wiped off the face of the earth — and the reason vaccines exist." },
     year: { uz: "~mil.av. 1350", en: "~1350 BCE" },
-    detail: null
+    detail: {
+  quote: {
+    uz: "Minglab yillar davomida insoniyatni qo'rquvda ushlab kelgan kasallik 1980-yilda rasman yo'q qilingan deb e'lon qilindi — bu tibbiyot tarixidagi eng katta g'alabalardan biridir.",
+    en: "After terrifying humanity for thousands of years, smallpox was officially declared eradicated in 1980 — one of the greatest victories in the history of medicine."
+  },
+
+  vitals: [
+    {
+      label: { uz: "Qadimiyligi", en: "How old is it?" },
+      value: { uz: "Kamida 3 000 yil", en: "At least 3,000 years old" }
+    },
+    {
+      label: { uz: "Qo'zg'atuvchisi", en: "Causative agent" },
+      value: { uz: "Variola virusi", en: "Variola virus" }
+    },
+    {
+      label: { uz: "Oxirgi tabiiy holat", en: "Last natural case" },
+      value: { uz: "1977, Somali", en: "1977, Somalia" }
+    },
+    {
+      label: { uz: "Hozirgi holati", en: "Status today" },
+      value: { uz: "1980-yilda rasman yo'q qilingan", en: "Officially eradicated in 1980" }
+    }
+  ],
+
+  sections: [
+    {
+      type: "text",
+      no: "01",
+      heading: {
+        uz: "Kelib chiqish sabablari",
+        en: "Origins & Causes"
+      },
+      paragraphs: [
+       {
+          uz: "Chechak — variola virusi keltirib chiqaradigan, odamdan odamga yuqadigan o'ta yuqumli kasallik edi. Virus organizmga asosan nafas yo'llari orqali kirib, keyin butun tana bo'ylab tarqalardi. Kasallik odatda yuqori isitma, kuchli holsizlik va bel og'rig'i bilan boshlanib, bir necha kundan keyin yuz, qo'l-oyoqlar va tanada o'ziga xos toshmalar paydo bo'lardi. Toshmalar asta-sekin suyuqlik, keyin yiring bilan to'lib, oxirida qobiq hosil qilardi. Og'ir holatlarda kasallik o'limga olib kelishi mumkin edi; omon qolganlarning ayrimlarida esa chuqur chandiqlar, hatto ko'rlik qolardi.",
+          en: "Smallpox was a highly contagious human disease caused by the variola virus. The virus usually entered the body through the respiratory tract and then spread throughout the body. The illness typically began with high fever, severe fatigue, and back pain, followed a few days later by a characteristic rash on the face, arms, legs, and other parts of the body. The spots gradually filled with fluid and then pus before forming crusts. Severe smallpox could be fatal, while survivors were sometimes left with deep scars or even blindness."
+        },
+        {
+          uz: "Chechakning eng xavfli tomoni uning faqat og'ir kechishida emas, balki juda oson tarqalishida ham edi. Kasallik bilan og'rigan odam yo'talganda yoki aksirganda ajralgan tomchilar yaqin atrofdagi odamlarga yuqishi mumkin edi; kiyim-kechak va choyshab kabi ifloslangan buyumlar ham virusning tarqalishida rol o'ynashi mumkin edi. Zamonaviy davolash usullari paydo bo'lishidan oldin chechakni butunlay davolaydigan dori mavjud emas edi. Shuning uchun insoniyat uzoq vaqt davomida kasallikning o'zini davolashdan ko'ra, uning oldini olish yo'lini izlashga majbur bo'ldi.",
+          en: "The danger of smallpox came not only from how severe the disease could be, but also from how easily it could spread. Respiratory droplets from an infected person could transmit the virus during close contact, while contaminated clothing and bedding could also contribute to transmission. Before modern medicine, there was no established cure that could reliably eliminate the infection. Humanity therefore spent centuries searching not simply for a treatment, but for a way to prevent the disease in the first place."
+        }
+      ]
+    },
+
+     {
+        type: "timeline",
+      no: "02",
+      heading: {
+        uz: "Tushuncha qanday o'zgargan",
+        en: "How Understanding Changed"
+      },
+      items: [
+        {
+          era: {
+            uz: "Qadimgi davrlar — XIX asrgacha",
+            en: "Ancient times — Before the 19th century"
+          },
+          title: {
+            uz: "Kasallikdan himoyalanishning dastlabki urinishi",
+            en: "The first attempts at protection"
+          },
+          text: {
+            uz: "Chechak minglab yillar davomida turli xalqlar orasida epidemiyalar keltirib chiqargan. Odamlar vaqt o'tishi bilan bir marta chechak bilan kasallangan odam odatda ikkinchi marta bu kasallikka chalinmasligini payqashgan. Shu kuzatuv asosida Osiyo va Afrikaning ayrim hududlarida variolatsiya deb atalgan usul paydo bo'lgan: sog'lom odamga chechak yarasidan olingan material ataylab berilib, kasallikning nisbatan yengil shaklini chaqirishga harakat qilingan. Bu usul xavfsiz emas edi, ammo tabiiy infeksiyaga qaraganda o'lim xavfi pastroq bo'lgan.",
+            en: "Smallpox caused devastating outbreaks for thousands of years. Over time, people noticed that those who survived the disease usually did not develop it again. This observation led to a practice known as variolation in parts of Asia and Africa: material taken from smallpox sores was deliberately introduced into a healthy person in an attempt to produce a milder infection. The method was far from safe, but the risk of death was generally lower than with naturally acquired smallpox."
+          }
+        },
+        {
+          era: {
+            uz: "1796 — Angliya",
+            en: "1796 — England"
+          },
+          title: {
+            uz: "Jenner va birinchi muvaffaqiyatli vaksina",
+            en: "Jenner and the first successful vaccine"
+          },
+          text: {
+             uz: "Ingliz shifokori Edvard Jenner sog'uvchilarda kuzatiladigan sigir chechagi bilan kasallanish keyinchalik odam chechagidan himoya qilishi mumkinligini payqadi. 1796-yilda u sakkiz yoshli Jeyms Fippsga sigir chechagi yarasidan olingan materialni yubordi. Bola bir necha kun o'zini yomon his qilgan bo'lsa-da, sog'ayib ketdi. Keyinchalik Jenner uni chechak virusiga duchor qilib ko'rganida, bola kasallanmagan. Bu tajriba vaksinalar tarixidagi burilish nuqtasiga aylandi.",
+            en: "English physician Edward Jenner noticed that people who had caught cowpox appeared to be protected from smallpox. In 1796, he inoculated eight-year-old James Phipps with material taken from a cowpox sore. The boy became mildly unwell but recovered. When Jenner later exposed him to smallpox, Phipps did not develop the disease. The experiment became a turning point in the history of vaccination."
+          }
+        },
+        {
+          era: {
+            uz: "1958–1967 — Xalqaro kurash boshlanadi",
+            en: "1958–1967 — The global campaign begins"
+          },
+          title: {
+            uz: "Kasallikni bitta mamlakat emas, butun dunyo yengishi kerak edi",
+            en: "Defeating the disease required the whole world"
+          },
+          text: {
+            uz: "Vaksina ko'plab mamlakatlarda chechakni keskin kamaytirgan bo'lsa-da, kasallik dunyoning ayrim hududlarida hali ham tarqalishda davom etdi. 1958-yilda Jahon sog'liqni saqlash assambleyasi chechakni butun dunyodan yo'q qilish maqsadini ilgari surdi. 1967-yilda esa Jahon sog'liqni saqlash tashkiloti bu ishni yanada kuchaytirib, vaksinalash bilan birga kasallik holatlarini faol izlash va bemor bilan aloqada bo'lgan odamlarni tezda vaksinalashga asoslangan global dasturni boshladi.",
+            en: "Although vaccination had dramatically reduced smallpox in many countries, the disease continued to circulate in parts of the world. In 1958, the World Health Assembly called for global eradication. In 1967, the World Health Organization intensified the campaign, combining vaccination with active case-finding and rapid vaccination of people who had been in contact with infected patients."
+          }
+        },
+        {
+          era: {
+             uz: "1970-yillar — So'nggi epidemiyalar",
+            en: "1970s — The final outbreaks"
+          },
+          title: {
+            uz: "Har bir bemorni topish poygasi",
+            en: "The race to find every last case"
+          },
+          text: {
+            uz: "Global dastur oddiygina butun aholini vaksinalash bilan cheklanib qolmadi. Sog'liqni saqlash xodimlari yangi holatlarni izlab topishdi, bemorlar bilan aloqada bo'lgan odamlarni aniqlashdi va ularni zudlik bilan vaksinalashdi. Bu usul kasallikning bir hududdan ikkinchisiga tarqalish zanjirini tezda uzishga yordam berdi. 1977-yilda Somalida qayd etilgan holat tabiiy ravishda yuz bergan chechakning dunyodagi so'nggi holati bo'ldi.",
+          en: "The global programme did not rely on vaccinating everyone everywhere. Health workers actively searched for new cases, identified people who had been in contact with patients, and vaccinated them quickly. This strategy helped break chains of transmission before the virus could spread further. The last known naturally occurring case was recorded in Somalia in 1977."
+          }
+        },
+        {
+          era: {
+            uz: "1979–1980 — Dunyo bo'yicha g'alaba",
+            en: "1979–1980 — Global victory"
+          },
+          title: {
+            uz: "Chechak rasman yo'q qilinadi",
+            en: "Smallpox is officially eradicated"
+          },
+          text: {
+            uz: "1977-yildagi so'nggi tabiiy holatdan keyin mutaxassislar boshqa hududlarda yashirincha tarqalayotgan chechak qolmaganini tekshirishda davom etdilar. 1979-yil dekabr oyida xalqaro ekspertlar chechakning butun dunyoda yo'q qilinganini tasdiqlashdi. 1980-yil 8-mayda Jahon sog'liqni saqlash assambleyasi bu qarorni rasman ma'qulladi. Shunday qilib, insoniyat tarixida birinchi marta yuqumli kasallik global miqyosda butunlay yo'q qilindi.",
+            en: "After the final natural case in 1977, experts continued searching for evidence that smallpox might still be circulating elsewhere. In December 1979, an international commission certified that smallpox had been eradicated worldwide. On May 8, 1980, the World Health Assembly officially endorsed the declaration. For the first time in history, a human infectious disease had been completely eliminated on a global scale."
+          }
+        }
+      ]
+    },
+
+     {
+        type: "living",
+      no: "03",
+      heading: {
+        uz: "Bugun bu kasallik bilan yashash",
+        en: "Living With It Today"
+      },
+      title: {
+        uz: "Endi kasallik emas, tarix",
+        en: "A disease that became history"
+      },
+      text: {
+        uz: "Bugungi kunda odamlar chechak bilan tabiiy ravishda kasallanmaydi — kasallik dunyo bo'ylab rasman yo'q qilingan. Bu g'alaba kasallikni yangi dori bilan davolash orqali emas, balki vaksina, epidemiologik kuzatuv, bemorlarni tezda aniqlash va xalqaro hamkorlik orqali qo'lga kiritildi. Chechak tarixi shuni ko'rsatadiki, tibbiyotdagi eng katta yutuqlar ba'zan bitta dori yoki bitta shifokorning kashfiyotidan emas, balki butun dunyo bo'ylab odamlarning bir maqsad yo'lida birgalikda ishlashidan kelib chiqadi.",
+        en: "People no longer acquire smallpox naturally today because the disease has been eradicated worldwide. This victory was achieved not by discovering a cure, but through vaccination, surveillance, rapid identification of cases, contact tracing, and international cooperation. The story of smallpox shows that some of medicine's greatest achievements do not come from a single drug or a single scientist, but from people around the world working together toward the same goal."
+      }
+    }
+  ],
+
+  nextCase: {
+    uz: "Keyingi ish fayli: Miokard infarkti",
+    en: "Next case: Myocardial Infarction"
+  }
+    }
   },
   {
     id: "mi", caseNo: "006", category: "cardio", categoryLabel: "Cardiovascular", stampStyle: "sage",
