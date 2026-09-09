@@ -852,7 +852,189 @@ en: "Next case: Smallpox (coming soon)"
     hook: { uz: "Nomi qadimiy bo'lgan zamonaviy epidemiya — Misr tabiblari uning belgilarini 3,500 yil oldin tasvirlashgan.",
             en: "A modern epidemic with an ancient name — Egyptian physicians described its symptoms 3,500 years ago." },
     year: { uz: "~mil.av. 1550", en: "~1550 BCE" },
-    detail: null
+    detail: {
+  quote: {
+    uz: "2-turdagi qandli diabet birdan paydo bo'ladigan kasallik emas. U ko'pincha yillar davomida organizmning insulinga javobi asta-sekin pasayib borishi natijasida rivojlanadi.",
+    en: "Type 2 diabetes does not usually appear overnight. It often develops over years as the body's response to insulin gradually becomes weaker."
+  },
+
+  vitals: [
+    {
+      label: { uz: "Eng muhim jarayon", en: "Key process" },
+      value: { uz: "Insulin qarshiligi", en: "Insulin resistance" }
+    },
+    {
+      label: { uz: "Asosiy a'zo", en: "Key organ" },
+      value: { uz: "Oshqozon osti bezi", en: "Pancreas" }
+    },
+    {
+      label: { uz: "Eng katta xavf omili", en: "Major risk factor" },
+      value: { uz: "Yosh va ortiqcha vazn bilan bog'liq xavf", en: "Age and excess weight-related risk" }
+    },
+    {
+      label: { uz: "Holati", en: "Status" },
+      value: { uz: "Nazorat qilinadi; ayrim hollarda remissiya mumkin", en: "Manageable; remission is possible in some cases" }
+    }
+  ],
+
+  sections: [
+    {
+      type: "text",
+      no: "01",
+      heading: {
+        uz: "Kelib chiqish sabablari",
+        en: "Origins & Causes"
+      },
+      paragraphs: [
+        {
+          uz: "2-turdagi qandli diabetni tushunish uchun avvalo insulin nima qilishini bilish kerak. Ovqat hazm bo'lganda uglevodlar glyukozaga parchalanadi va glyukoza qonga o'tadi. Shunda oshqozon osti bezi insulin ishlab chiqaradi. Insulin xuddi hujayraning eshigini ochadigan kalitga o'xshab, glyukozaning mushak, yog' va boshqa to'qimalardagi hujayralarga kirishiga yordam beradi. 2-turdagi diabetda esa hujayralar insulinning ta'siriga avvalgidek javob bermay qo'yadi. Bu holat insulin qarshiligi deb ataladi.",
+          en: "To understand type 2 diabetes, it helps to understand what insulin normally does. When food is digested, carbohydrates are broken down into glucose, which enters the bloodstream. The pancreas then releases insulin. Like a key opening a door, insulin helps glucose move from the blood into muscle, fat, and other cells. In type 2 diabetes, however, cells gradually stop responding to insulin as effectively as they once did. This is known as insulin resistance."
+        },
+       {
+          uz: "Dastlab oshqozon osti bezi bu muammoni qoplash uchun yanada ko'proq insulin ishlab chiqaradi. Ammo vaqt o'tishi bilan beta-hujayralar bu yuqori talabni doimiy ravishda qondira olmay qoladi. Natijada insulin yetishmovchiligi ham qo'shilib, qondagi glyukoza miqdori ko'tariladi. Kasallik rivojlanishida genetika, yosh, ortiqcha vazn, kamharakat turmush tarzi va boshqa omillar rol o'ynashi mumkin. Shu bilan birga, 2-turdagi diabetni faqat bitta sabab bilan izohlab bo'lmaydi — u genetik va atrof-muhit omillarining murakkab kombinatsiyasi natijasidir.",
+          en: "At first, the pancreas tries to compensate by producing more insulin. Over time, however, the beta cells may no longer be able to keep up with the body's increased demand. Insulin production can then become insufficient as well, causing blood glucose levels to rise. Genetics, age, excess weight, physical inactivity, and other factors can all contribute to the risk. Type 2 diabetes therefore cannot be explained by a single cause — it develops through a complex interaction between genetic and environmental factors."
+        }
+      ]
+    },
+
+    {
+      type: "timeline",
+      no: "02",
+      heading: {
+        uz: "Tushuncha qanday o'zgargan",
+        en: "How Understanding Changed"
+      },
+      items: [
+        {
+          era: {
+            uz: "Qadimgi Misr — mil.av. ~1550-yil",
+            en: "Ancient Egypt — c. 1550 BCE"
+          },
+          title: {
+            uz: "G'alati chanqoq va ko'p siyish",
+            en: "Strange thirst and excessive urination"
+          },
+          text: {
+             uz: "Qadimgi Misrning Ebers papirusida haddan tashqari chanqash va tez-tez siyish kabi belgilar tasvirlangan. O'sha davr shifokorlari diabetning asl biologik sababini bilmagan bo'lsalar-da, keyinchalik diabet bilan bog'lanadigan ayrim alomatlarni kuzatib, yozib qoldirishgan. Bu kasallikning tarixi aslida zamonaviy laboratoriyalar paydo bo'lishidan minglab yillar oldin boshlanganini ko'rsatadi.",
+            en: "The ancient Egyptian Ebers Papyrus described symptoms such as excessive thirst and frequent urination. Physicians of the time did not understand the biological cause of diabetes, but they recorded symptoms that would later become closely associated with the disease. The history of diabetes therefore began thousands of years before modern laboratories existed."
+          }
+        },
+
+        {
+          era: {
+            uz: "Milodiy II asr — Rim imperiyasi",
+            en: "2nd century CE — Roman Empire"
+          },
+          title: {
+            uz: "Diabet nomi paydo bo'ladi",
+            en: "The name diabetes emerges"
+          },
+          text: {
+            uz: "Qadimgi yunon shifokori Aretey diabetga o'xshash holatlarni tasvirlab, uning asosiy belgilaridan biri siydikning organizmdan go'yo to'xtovsiz oqib chiqishini qayd etgan. Yunoncha \"diabetes\" so'zi ham shu davrdagi tibbiy tasvirlar bilan bog'liq bo'lib, kasallik nomi keyinchalik butun tibbiyotda ishlatila boshladi. Ammo o'sha paytda 1-tur va 2-turdagi diabet o'rtasidagi farq hali ma'lum emas edi.",
+            en: "The ancient Greek physician Aretaeus described a condition resembling diabetes, noting the seemingly continuous flow of urine that characterized it. The Greek term 'diabetes' became associated with this medical description and eventually entered medical language. At that time, however, physicians had no understanding of the distinction between type 1 and type 2 diabetes."
+          }
+        },
+
+        {
+          era: {
+            uz: "XVII–XVIII asrlar",
+            en: "17th–18th centuries"
+          },
+          title: {
+            uz: "Shirin siydik siri",
+            en: "The mystery of sweet urine"
+          },
+          text: {
+             uz: "1600-yillarda ingliz shifokori Tomas Uillis diabet bilan bog'liq siydikning shirin ta'miga e'tibor qaratdi. Keyinchalik Metyu Dobson siydikdagi shirin modda aslida qand ekanini tajribalar orqali ko'rsatdi. Shu tariqa diabetning qondagi va siydikdagi glyukoza bilan bog'liqligi tobora aniqroq bo'lib bordi. Ammo kasallikning organizmda qanday paydo bo'lishi hali ham noma'lum edi.",
+            en: "In the 1600s, English physician Thomas Willis drew attention to the sweet taste associated with the urine of people with diabetes. Later, Matthew Dobson demonstrated through experiments that the sweet substance was actually sugar. Diabetes was therefore increasingly linked to glucose in the blood and urine. Yet its underlying mechanism inside the body remained unknown."
+          }
+        },
+
+        {
+          era: {
+            uz: "1889 — Strasburg",
+            en: "1889 — Strasbourg"
+          },
+          title: {
+            uz: "Oshqozon osti bezi sirning markazida",
+            en: "The pancreas becomes the center of the mystery"
+          },
+          text: {
+            uz: "Oskar Minkovski va Jozef fon Mering itning oshqozon osti bezini olib tashlaganlaridan so'ng hayvonda diabetga o'xshash belgilar paydo bo'lganini kuzatishdi. Bu tajriba oshqozon osti bezi qondagi glyukozani boshqarishda juda muhim rol o'ynashini ko'rsatdi. Keyinchalik olimlar pankreasdagi maxsus hujayralar qondagi shakarni boshqaruvchi modda ishlab chiqaradi degan fikrga kelishdi. Bu izlanishlar insulin kashfiyotiga olib boradigan yo'lning muhim qismiga aylandi.",
+            en: "Oskar Minkowski and Joseph von Mering observed that removing a dog's pancreas caused diabetes-like symptoms. Their experiment showed that the pancreas played a crucial role in regulating blood glucose. Scientists later realized that specialized pancreatic cells produced a substance responsible for controlling blood sugar. These investigations became an important step toward the discovery of insulin."
+          }
+        },
+
+        {
+          era: {
+            uz: "1921–1922 — Toronto",
+            en: "1921–1922 — Toronto"
+          },
+          title: {
+            uz: "Insulin davrni o'zgartiradi",
+            en: "Insulin changes an era"
+          },
+          text: {
+             uz: "1921-yilda Toronto universitetida Frederick Banting, Charles Best, John Macleod va James Collip ishtirokidagi tadqiqotlar insulin bilan bog'liq katta burilish yasadi. Insulinni ajratish va tozalash jarayonining rivojlanishi diabetning og'ir shakllari bilan yashayotgan bemorlarga yangi imkoniyat berdi. 1922-yilda insulin Leonard Thompson ismli 13 yoshli bemorda qo'llanilib, uning ahvolida keskin yaxshilanish kuzatildi. Insulin asosan 1-turdagi diabet uchun hayotiy muhim davolash bo'lsa-da, uning kashfiyoti diabetning barcha turlarini tushunish va boshqarish tarixida ulkan ahamiyatga ega bo'ldi.",
+            en: "Research at the University of Toronto involving Frederick Banting, Charles Best, John Macleod, and James Collip produced a major breakthrough in 1921. Improvements in extracting and purifying insulin opened a new possibility for people with severe diabetes. In 1922, insulin was administered to 13-year-old Leonard Thompson, whose condition improved dramatically. Although insulin is essential for people with type 1 diabetes, its discovery transformed the understanding and treatment of diabetes as a whole."
+          }
+        },
+
+        {
+          era: {
+            uz: "1950–1980-yillar",
+            en: "1950s–1980s"
+          },
+          title: {
+            uz: "Diabetning ikki xil mexanizmi tushunila boshlaydi",
+            en: "Two different mechanisms begin to emerge"
+          },
+          text: {
+            uz: "Insulin kashf etilgach, olimlar diabet bilan og'rigan barcha bemorlar bir xil biologik muammoga ega emasligini tushuna boshladilar. Ayrim bemorlarda insulin deyarli ishlab chiqarilmas edi, boshqalarida esa organizm insulin ishlab chiqarsa ham, hujayralar unga yetarlicha javob bermasdi. Ikkinchi holat keyinchalik insulin qarshiligi tushunchasining markaziga aylandi. Shu tariqa bugungi kunda 1-turdagi va 2-turdagi diabet deb ataladigan kasalliklarning biologik jihatdan farqli ekanligi yanada ravshanlashdi.",
+            en: "After insulin was discovered, researchers began to realize that not everyone with diabetes had the same biological problem. In some patients, very little insulin was produced, while in others the body still produced insulin but the cells did not respond to it effectively. The latter mechanism became central to the concept of insulin resistance. This helped establish that what we now call type 1 and type 2 diabetes are biologically different conditions."
+          }
+        },
+
+        {
+          era: {
+            uz: "1990-yillar — Bugungi kun",
+            en: "1990s — Today"
+          },
+          title: {
+            uz: "Bitta kasallik emas, murakkab tizim",
+            en: "More than just one disease"
+          },
+          text: {
+             uz: "Bugungi tadqiqotlar 2-turdagi diabetni faqat qondagi shakar miqdorini pasaytirish bilan cheklamaydi. Olimlar insulin qarshiligi, beta-hujayralar faoliyatining pasayishi, jigar va yog' to'qimalarining metabolizmdagi roli hamda ichak gormonlari kabi ko'plab jarayonlarni birgalikda o'rganmoqda. GLP-1 retseptor agonistlari va boshqa zamonaviy dorilar diabetni nazorat qilish bilan birga ayrim bemorlarda tana vaznini kamaytirishga ham yordam beradi. Tadqiqotlarning yana bir muhim yo'nalishi — ayrim odamlarda kasallikni remissiyaga olib kirish va asoratlarning oldini olish imkoniyatlarini o'rganishdir.",
+            en: "Modern research no longer views type 2 diabetes as simply a problem of lowering blood sugar. Scientists study insulin resistance, declining beta-cell function, the roles of the liver and fat tissue in metabolism, and hormones produced by the gut. Modern treatments, including GLP-1 receptor agonists, can improve glucose control and may also help some patients lose weight. Another major research goal is understanding how type 2 diabetes can enter remission in some people and how its long-term complications can be prevented."
+          }
+        }
+      ]
+    },
+
+    {
+      type: "living",
+      no: "03",
+      heading: {
+        uz: "Bugun bu kasallik bilan yashash",
+        en: "Living With It Today"
+      },
+      title: {
+        uz: "Nazorat qilish — faqat shakarni kamaytirish emas",
+        en: "Management is about more than lowering sugar"
+      },
+      text: {
+        uz: "2-turdagi diabet bilan yashashning asosiy maqsadi qondagi glyukozani nazorat qilish bilan birga yurak, buyrak, ko'z va asab tizimini uzoq muddat himoya qilishdir. Davolash har bir inson uchun bir xil emas: ovqatlanish va jismoniy faollikni o'zgartirish, vaznni boshqarish, tabletkalar yoki boshqa dorilar, ayrim hollarda esa insulin kerak bo'lishi mumkin. Eng muhimi, 2-turdagi diabet \"faqat ko'p shirinlik yeyishdan\" kelib chiqadigan oddiy kasallik emas. U genetika, metabolizm, turmush tarzi va boshqa biologik omillar bir-biri bilan ta'sirlashadigan murakkab holatdir.",
+        en: "Living with type 2 diabetes means more than simply controlling blood glucose. The long-term goal is also to protect the heart, kidneys, eyes, and nervous system from complications. Treatment is not identical for everyone: changes in eating habits and physical activity, weight management, medications, and sometimes insulin may all be part of care. Most importantly, type 2 diabetes is not simply a disease caused by eating too much sugar. It is a complex condition shaped by interactions between genetics, metabolism, lifestyle, and other biological factors."
+      }
+    }
+  ],
+
+  nextCase: {
+    uz: "Keyingi ish fayli: Parkinson kasalligi",
+    en: "Next case: Parkinson's disease"
+  }
+    }
   }
 
   /* ── YANGI KASALLIK QO'SHISH UCHUN NAMUNA (shu joyga vergul bilan qo'shing) ──
