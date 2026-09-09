@@ -534,7 +534,155 @@ en: "Next case: Smallpox (coming soon)"
     hook: { uz: "Yurak xuruji: bir vaqtlar o'lim hukmi, hozir esa aksariyat hollarda omon qolish mumkin.",
             en: "The heart attack: once a death sentence, now survivable in the vast majority of cases." },
     year: { uz: "1912", en: "1912" },
-    detail: null
+    detail: {
+  quote: {
+    uz: "Yurak xuruji bir necha daqiqada hayot uchun xavfli holatga aylanishi mumkin — ammo zamonaviy tibbiyot uni tez aniqlash va davolash orqali millionlab hayotlarni saqlab qolmoqda.",
+    en: "A heart attack can become life-threatening within minutes — yet modern medicine can now save millions of lives by recognizing and treating it quickly."
+  },
+
+  vitals: [
+    {
+      label: { uz: "Tibbiyotda tan olingan davr", en: "Recognized in medicine" },
+      value: { uz: "XIX–XX asrlar", en: "19th–20th centuries" }
+    },
+    {
+      label: { uz: "Asosiy sabab", en: "Main cause" },
+      value: { uz: "Yurakni oziqlantiruvchi arteriyaning to'silib qolishi", en: "Blockage of a coronary artery" }
+    },
+    {
+      label: { uz: "Eng muhim xavf omili", en: "Major risk factor" },
+      value: { uz: "Koronar arteriya kasalligi", en: "Coronary artery disease" }
+    },
+    {
+      label: { uz: "Hozirgi holati", en: "Status today" },
+      value: { uz: "Shoshilinch davolash bilan ko'p hollarda omon qolish mumkin", en: "Often survivable with rapid emergency treatment" }
+    }
+  ],
+
+  sections: [
+    {
+      type: "text",
+      no: "01",
+      heading: {
+        uz: "Kelib chiqish sabablari",
+        en: "Origins & Causes"
+      },
+      paragraphs: [
+         {
+            uz: "Miokard infarkti, oddiy qilib aytganda, yurak mushagining bir qismi yetarli qon va kislorod ololmay qolganida yuz beradi. Yurakning o'zi ham doimiy ravishda kislorodga muhtoj, va bu ehtiyojni koronar arteriyalar deb ataladigan qon tomirlari ta'minlaydi. Ko'p hollarda bu arteriyalarning ichki devorida yillar davomida xolesterin, yog' va boshqa moddalar to'planib, aterosklerotik blyashka hosil qiladi. Agar blyashka yorilib ketsa, uning ustida qon ivishi — tromb — paydo bo'lishi va arteriyani to'sib qo'yishi mumkin. Qon oqimi to'xtagan sari yurak mushagi kislorodsiz qoladi va vaqt o'tishi bilan uning hujayralari nobud bo'la boshlaydi.",
+          en: "A myocardial infarction, commonly called a heart attack, occurs when part of the heart muscle is suddenly deprived of enough blood and oxygen. The heart itself needs a constant oxygen supply, delivered through blood vessels called the coronary arteries. In many cases, cholesterol, fat, and other substances gradually build up inside these arteries, forming atherosclerotic plaques. If a plaque ruptures, a blood clot can form on top of it and block the artery. As blood flow stops, the heart muscle becomes starved of oxygen and its cells begin to die."
+        },
+        {
+          uz: "Yurak xurujining xavfi yosh o'tishi bilan ortadi, ammo u faqat keksa odamlarda uchraydigan kasallik emas. Chekish, yuqori qon bosimi, yuqori xolesterin, diabet, ortiqcha vazn, kamharakat turmush tarzi va oilada yurak-qon tomir kasalliklarining bo'lishi xavfni oshiradi. Ba'zan kuchli jismoniy yoki hissiy stress ham mavjud yurak-qon tomir muammolari fonida xurujni qo'zg'atishi mumkin. Eng muhim jihat shundaki, yurak xuruji vaqtga juda bog'liq: qon oqimi qanchalik tez tiklansa, yurak mushagining shunchalik ko'p qismi saqlab qolinadi.",
+          en: "The risk of a heart attack increases with age, but it is not exclusively a disease of older people. Smoking, high blood pressure, high cholesterol, diabetes, excess weight, physical inactivity, and a family history of cardiovascular disease can all increase the risk. Severe physical or emotional stress may also trigger an event in someone with underlying cardiovascular disease. Most importantly, a heart attack is a race against time: the sooner blood flow is restored, the more heart muscle can potentially be saved."
+        }
+      ]
+    },
+
+    {
+      type: "timeline",
+      no: "02",
+      heading: {
+        uz: "Tushuncha qanday o'zgargan",
+        en: "How Understanding Changed"
+      },
+      items: [
+         {
+            era: {
+            uz: "XVIII–XIX asrlar — Yevropa",
+            en: "18th–19th centuries — Europe"
+          },
+          title: {
+            uz: "Yurak og'rig'i hali sir edi",
+            en: "Heart pain was still a mystery"
+          },
+          text: {
+            uz: "Ko'krakdagi kuchli og'riq va to'satdan o'lim qadimdan ma'lum bo'lgan bo'lsa-da, shifokorlar uzoq vaqt davomida bu hodisalarning aniq sababini tushuntira olmadilar. Yurak kasalliklari haqidagi tushunchalar asosan bemorning belgilarini kuzatishga tayanardi. Yurakning o'zini tekshirish va qon tomirlarida nima sodir bo'layotganini ko'rish imkoniyati deyarli yo'q edi. Shu sababli ko'plab yurak xurujlari o'limdan keyingina taxmin qilingan.",
+            en: "Severe chest pain and sudden death had been recognized for centuries, but physicians could not explain exactly what caused them. Understanding of heart disease relied largely on observing symptoms, because doctors had almost no way to examine the living heart or see what was happening inside the coronary arteries. As a result, many heart attacks were only suspected after death."
+          }
+        },
+        {
+          era: {
+            uz: "1912 — AQSh",
+            en: "1912 — United States"
+          },
+          title: {
+            uz: "Yurak xuruji alohida klinik holat sifatida tasvirlanadi",
+            en: "Heart attack becomes a distinct clinical condition"
+          },
+          text: {
+            uz: "Amerikalik shifokor Jeyms Brayan Herrik koronar arteriyalarning to'silib qolishi yurak mushagiga zarar yetkazishi mumkinligini batafsil tasvirlab berdi. U yurak xurujining belgilari va uning koronar qon aylanishi bilan bog'liqligini tushuntirdi. Bu fikr keyinchalik yurak xurujini shunchaki \"to'satdan o'lim\" emas, balki aniq mexanizmga ega bo'lgan tibbiy holat sifatida tushunishga yordam berdi.",
+            en: "American physician James Bryan Herrick described how blockage of the coronary arteries could damage the heart muscle. He explained the symptoms of myocardial infarction and connected them to disrupted coronary blood flow. His work helped establish the heart attack as a specific medical condition rather than simply a mysterious cause of sudden death."
+          }
+        },
+        {
+          era: {
+             uz: "1950-yillar — AQSh",
+            en: "1950s — United States"
+          },
+          title: {
+            uz: "Yurak xurujidan keyin omon qolish imkoniyati o'zgaradi",
+            en: "Survival after a heart attack begins to change"
+          },
+          text: {
+            uz: "XX asrning o'rtalariga kelib shifokorlar yurak xurujidan keyingi dastlabki kunlar juda xavfli ekanini yaxshiroq tushuna boshladilar. Maxsus koronar bo'limlarda bemorlarning yurak urishi va boshqa muhim ko'rsatkichlari doimiy kuzatila boshlandi. Yurak ritmining xavfli buzilishlarini tezda aniqlash va davolash imkoniyati ko'plab bemorlarning hayotini saqlab qolishga yordam berdi.",
+            en: "By the middle of the 20th century, doctors had begun to understand that the first days after a heart attack were particularly dangerous. Specialized coronary care units allowed patients' heart rhythms and vital signs to be continuously monitored. Being able to detect and treat dangerous rhythm disturbances quickly helped save many lives."
+          }
+        },
+        {
+          era: {
+            uz: "1970–1980-yillar — Interventsion kardiologiya",
+            en: "1970s–1980s — Interventional cardiology"
+          },
+          title: {
+            uz: "To'silgan arteriyani ochish davri",
+            en: "The era of reopening blocked arteries"
+          },
+          text: {
+            uz: "Keyingi katta qadam qon oqimini to'g'ridan-to'g'ri tiklash usullarining rivojlanishi bo'ldi. Shifokorlar maxsus kateterlar yordamida yurak tomirlariga kirib, toraygan yoki to'silgan joyni aniqlash va ochish imkoniyatiga ega bo'ldilar. Angioplastika va keyinchalik stentlardan foydalanish yurak mushagiga qon yetkazilishini tiklashda muhim vositaga aylandi. Bu usullar ayniqsa tez bajarilganda yurak mushagining shikastlanishini kamaytirishi mumkin edi.",
+            en: "The next major breakthrough was the development of techniques that could restore blood flow directly. Doctors learned to use specialized catheters to reach the coronary arteries, identify blockages, and reopen narrowed vessels. Angioplasty and later coronary stents became important tools for restoring blood supply to the heart. When performed quickly, these procedures could significantly reduce damage to the heart muscle."
+          }
+        },
+        {
+          era: {
+            uz: "2000-yillar — Bugungi kun",
+            en: "2000s — Today"
+          },
+          title: {
+            uz: "Har bir daqiqa muhim",
+            en: "Every minute matters"
+          },
+          text: {
+             uz: "Bugungi kunda yurak xurujini aniqlash uchun EKG, qon tahlillari, ayniqsa troponin darajasi, va zarurat bo'lsa koronar angiografiya kabi usullar qo'llanadi. Yurak tomiri to'silib qolgan bemorlarda uni imkon qadar tez ochish, masalan, stent qo'yish orqali qon oqimini tiklash asosiy maqsadlardan biridir. Shuningdek, xolesterinni kamaytiruvchi dorilar, antitrombotik preparatlar va boshqa davolash usullari keyingi xuruj xavfini kamaytirishga yordam beradi. Eng katta o'zgarish shundaki, yurak xuruji endi ko'p hollarda darhol o'lim hukmi sifatida emas, balki tezkor tibbiy yordam talab qiladigan, ammo davolash mumkin bo'lgan favqulodda holat sifatida qaraladi.",
+            en: "Today, heart attacks can be diagnosed using an ECG, blood tests — especially troponin levels — and, when necessary, coronary angiography. When an artery is blocked, restoring blood flow as quickly as possible, often by placing a stent, is a central goal of treatment. Cholesterol-lowering medicines, antithrombotic drugs, and other therapies can also reduce the risk of another event. The biggest change is that a heart attack is no longer automatically viewed as a death sentence, but as a medical emergency that can often be treated successfully when help arrives quickly."
+          }
+        }
+      ]
+    },
+
+    {
+      type: "living",
+      no: "03",
+      heading: {
+        uz: "Bugun bu kasallik bilan yashash",
+        en: "Living With It Today"
+      },
+      title: {
+        uz: "Xurujdan keyingi hayot ham davolashning bir qismi",
+        en: "Life after a heart attack is part of the treatment too"
+      },
+      text: {
+        uz: "Yurak xurujidan omon qolish davolashning oxiri emas. Bemorlar ko'pincha shifokor nazorati ostida yurak reabilitatsiyasidan o'tadi, dori-darmonlarni muntazam qabul qiladi va qon bosimi, xolesterin hamda qand miqdorini nazorat qiladi. Chekishni tashlash, sog'lom ovqatlanish va shifokor tavsiya qilgan jismoniy faollik ham keyingi yurak xuruji xavfini kamaytirishda muhim rol o'ynaydi. Eng muhimi, ko'krakda bosuvchi yoki siquvchi og'riq, nafas qisishi, sovuq ter bosishi yoki to'satdan kuchli holsizlik kabi belgilar paydo bo'lsa, vaqtni boy bermasdan shoshilinch tibbiy yordam chaqirish kerak.",
+        en: "Surviving a heart attack is not the end of treatment. Patients often take part in cardiac rehabilitation, continue prescribed medicines, and monitor blood pressure, cholesterol, and blood sugar under medical supervision. Stopping smoking, eating a heart-healthy diet, and gradually becoming physically active as advised by a doctor can all reduce the risk of another heart attack. Most importantly, symptoms such as pressure or squeezing in the chest, shortness of breath, cold sweating, or sudden severe weakness require urgent medical attention."
+      }
+    }
+  ],
+
+  nextCase: {
+    uz: "Keyingi ish fayli: 1-turdagi qandli diabet",
+    en: "Next case: Type 1 Diabetes"
+  }
+    }
   },
   {
     id: "t1d", caseNo: "007", category: "autoimmune", categoryLabel: "Autoimmune", stampStyle: "",
