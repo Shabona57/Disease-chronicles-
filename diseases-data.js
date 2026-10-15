@@ -1054,4 +1054,223 @@ en: "Next case: Smallpox (coming soon)"
   }
 
   */
+   ,{
+  id: "parkinson",
+  caseNo: "009",
+  category: "neuro",
+  categoryLabel: "Neurological",
+  stampStyle: "sage",
+
+  stamp: {
+    uz: "Progressiv",
+    en: "Progressive"
+  },
+
+  title: {
+    uz: "Parkinson kasalligi",
+    en: "Parkinson's Disease"
+  },
+
+  hook: {
+    uz: "Harakatlarni boshqaruvchi miya tizimi asta-sekin o‘zgaradi — 1817-yilda tasvirlangan bu kasallikning sirlarini olimlar hali ham o‘rganmoqda.",
+    en: "The brain's movement-control system gradually changes — and scientists are still uncovering the secrets of the disease first described in 1817."
+  },
+      year: {
+    uz: "1817",
+    en: "1817"
+  },
+
+  detail: {
+    quote: {
+      uz: "1817-yilda ingliz shifokori Jeyms Parkinson ayrim bemorlarda kuzatgan titroq, harakatning sekinlashishi va yurishdagi qiyinchiliklarni bir asarida tasvirlab berdi. Keyinchalik bu kasallik uning nomi bilan ataldi.",
+      en: "In 1817, English physician James Parkinson described tremor, slowing movement, and difficulty walking in a short medical work. The condition would later bear his name."
+    },
+
+    vitals: [
+      {
+        label: {
+          uz: "Birinchi batafsil tibbiy tavsif",
+          en: "First detailed medical description"
+        },
+         value: {
+          uz: "1817, London",
+          en: "1817, London"
+        }
+      },
+      {
+        label: {
+          uz: "Tarixiy nomi",
+          en: "Historical name"
+        },
+        value: {
+          uz: "Qaltirash falaji",
+          en: "Shaking palsy"
+        }
+      },
+      {
+        label: {
+          uz: "Asosan nimaga ta'sir qiladi?",
+          en: "What does it primarily affect?"
+        },
+        value: {
+          uz: "Harakatlarni boshqarish tizimiga",
+          en: "The brain's movement-control system"
+        }
+      },
+       {
+          label: {
+          uz: "Hozirgi davolash holati",
+          en: "Current treatment status"
+        },
+        value: {
+          uz: "Belgilarni yengillashtirish mumkin, ammo to‘liq davosi yo‘q",
+          en: "Symptoms can be managed, but there is no cure yet"
+        }
+      }
+    ],
+
+    sections: [
+      {
+        type: "text",
+        no: "01",
+
+        heading: {
+          uz: "Kelib chiqish sabablari",
+          en: "Origins & Causes"
+        },
+
+        paragraphs: [
+           {
+              uz: "Parkinson kasalligi — asab tizimining vaqt o‘tishi bilan rivojlanadigan kasalligi. Unda miyaning harakatlarni boshqarishda muhim rol o‘ynaydigan qora modda (substantia nigra) deb ataluvchi qismidagi ayrim nerv hujayralari asta-sekin nobud bo‘ladi. Bu hujayralar dopamin ishlab chiqaradi — dopamin esa harakatlarning ravon, aniq va muvofiqlashgan bo‘lishiga yordam beruvchi kimyoviy xabarchidir. Dopamin miqdori kamayganda, miya harakatlarni boshqarishda qiynala boshlaydi. Natijada harakatning sekinlashishi, mushaklarning qotishi va tinch holatda qo‘llarning titrashi kabi belgilar paydo bo‘lishi mumkin.",
+            en: "Parkinson's disease is a progressive disorder of the nervous system. In this condition, certain nerve cells in a brain region called the substantia nigra gradually die. These cells produce dopamine, a chemical messenger that helps the brain coordinate smooth, controlled movements. As dopamine levels fall, the brain becomes less effective at controlling movement. This can lead to symptoms such as slowness of movement, muscle stiffness, and tremor when the body is at rest."
+          },
+           {
+              uz: "Kasallikning aniq sababi barcha bemorlarda bir xil emas. Yoshning ortishi muhim xavf omili hisoblanadi; ayrim genetik o‘zgarishlar va atrof-muhit ta'sirlari ham rol o‘ynashi mumkin. Biroq ko‘pchilik bemorlarda kasallikni keltirib chiqargan yagona sababni aniqlab bo‘lmaydi. Parkinson kasalligi faqat qo‘l titrashidan iborat emas: ayrim odamlarda hid bilishning pasayishi, qabziyat, uyqu buzilishi yoki kayfiyat o‘zgarishlari harakat bilan bog‘liq belgilar paydo bo‘lishidan oldin ham kuzatilishi mumkin. Har bir bemorda belgilar va kasallikning rivojlanish tezligi turlicha bo‘ladi.",
+            en: "The exact cause is not the same in every patient. Increasing age is an important risk factor, while certain genetic changes and environmental exposures may also contribute. However, in most cases, no single cause can be identified. Parkinson's disease is not simply a condition that causes shaking hands: reduced sense of smell, constipation, sleep disturbances, and mood changes may appear before movement-related symptoms. The symptoms and rate of progression vary from person to person."
+     }
+           ]
+      },
+
+      {
+        type: "timeline",
+        no: "02",
+
+        heading: {
+          uz: "Tushuncha qanday o‘zgargan",
+          en: "How Understanding Changed"
+        },
+
+        items: [
+          {
+            era: {
+              uz: "1817 — London, Angliya",
+              en: "1817 — London, England"
+            },
+
+            title: {
+              uz: "Oltita holat orqali boshlangan kashfiyot",
+              en: "A discovery based on six cases"
+            },
+
+            text: {
+              uz: "Ingliz shifokori Jeyms Parkinson o‘zining An Essay on the Shaking Palsy nomli asarida olti kishida kuzatilgan belgilarni bayon qildi. U titroq, gavdaning oldinga egilishi va yurishdagi o‘zgarishlarga e'tibor qaratdi. Bu tavsif hali kasallikning biologik sababini tushuntirib bermagan bo‘lsa-da, keyingi tadqiqotlar uchun muhim boshlang‘ich nuqta bo‘ldi.",
+               en: "English physician James Parkinson described symptoms observed in six people in his work An Essay on the Shaking Palsy. He highlighted tremor, a forward-bent posture, and changes in walking. Although his account did not explain the biological cause of the disease, it provided an important starting point for later research."
+            }
+          },
+
+          {
+            era: {
+              uz: "1860-yillar — Fransiya",
+              en: "1860s — France"
+            },
+
+            title: {
+              uz: "Kasallikning klinik tavsifi aniqlashtiriladi",
+              en: "The clinical picture becomes clearer"
+            },
+
+            text: {
+              uz: "Fransuz nevrologi Jan-Martin Sharko Parkinson ta'riflagan holatlarni yanada chuqur o‘rgandi. U harakatlarning sekinlashishi va mushaklarning qotishi kabi belgilarni yaxshiroq farqlashga yordam berdi hamda kasallikni boshqa nevrologik holatlardan ajratish ustida ishladi. Parkinson nomi bilan ataladigan kasallik haqidagi tibbiy tushuncha shu davrda kengaydi.",
+              en: "French neurologist Jean-Martin Charcot studied the condition in greater detail. He helped distinguish slowness of movement and muscle rigidity as important features and worked to separate the disease from other neurological conditions. Medical understanding of the disorder named after Parkinson expanded during this period."
+            }
+          },
+
+          {
+            era: {
+              uz: "1912–1919 — Yevropa",
+              en: "1912–1919 — Europe"
+            },
+
+            title: {
+               uz: "Miya hujayralari ichidagi o‘ziga xos tuzilmalar",
+              en: "Distinctive structures inside brain cells"
+            },
+
+            text: {
+              uz: "Olimlar ayrim nerv hujayralari ichida o‘ziga xos oqsil to‘plamlarini kuzatdilar. Keyinchalik Leviy tanachalari deb atalgan bu tuzilmalar Parkinson kasalligining patologiyasini o‘rganishda muhim belgilardan biriga aylandi. Biroq ular faqat Parkinson kasalligida uchramaydi; boshqa ayrim nevrologik kasalliklarda ham aniqlanishi mumkin.",
+              en: "Scientists observed distinctive protein-containing structures inside certain nerve cells. Later known as Lewy bodies, these structures became important clues in understanding the pathology of Parkinson's disease. However, they are not exclusive to Parkinson's and can also occur in other neurological disorders."
+            }
+          },
+
+          {
+            era: {
+              uz: "1960 — Dopaminning ahamiyati aniqlanadi",
+              en: "1960 — The importance of dopamine is revealed"
+            },
+
+            title: {
+               uz: "Miyada dopamin kamayishi aniqlanadi",
+              en: "Reduced dopamine is identified"
+            },
+
+            text: {
+              uz: "Oleh Hornikevich va uning hamkasblari Parkinson kasalligiga chalingan odamlarning miyasida dopamin miqdori keskin kamayganini aniqlashga yordam berdilar. Bu kashfiyot harakat buzilishlarining biologik asosini tushunishda katta burilish yasadi. Endi olimlar faqat tashqi belgilarni kuzatish bilan cheklanmay, kasallikda qaysi kimyoviy jarayonlar o‘zgarishini ham o‘rgana boshladilar.",
+              en: "Oleh Hornykiewicz and his colleagues helped establish that dopamine levels were markedly reduced in the brains of people with Parkinson's disease. This discovery transformed understanding of the biological basis of movement difficulties. Researchers could now investigate the chemical changes underlying the symptoms rather than focusing only on their outward appearance."
+            }
+          },
+
+          {
+            era: {
+              uz: "1960-yillar — Levodopa davri",
+              en: "1960s — The era of levodopa"
+            },
+
+            title: {
+              uz: "Harakatlarni yengillashtiruvchi yangi davolash",
+              en: "A new treatment improves movement"
+            },
+
+            text: {
+              uz: "Levodopa preparati organizmda dopaminga aylanishi mumkinligi sababli Parkinson kasalligini davolashda muhim vositaga aylandi. 1960-yillarda o‘tkazilgan klinik tadqiqotlar uning ko‘plab bemorlarda harakatni yaxshilashini ko‘rsatdi. Levodopa kasallikni butunlay yo‘q qilmaydi, ammo uning ayrim belgilarini sezilarli darajada yengillashtirishi mumkin. Shu tariqa kasallikni davolash tarixida yangi bosqich boshlandi.",
+               en: "Levodopa became a major treatment for Parkinson's disease because the body can convert it into dopamine. Clinical studies during the 1960s demonstrated that it could improve movement in many patients. Levodopa does not eliminate the disease, but it can substantially relieve some symptoms. Its introduction marked a new chapter in the history of Parkinson's treatment."
+            }
+          }
+        ]
+      },
+
+      {
+        type: "living",
+        no: "03",
+
+        heading: {
+          uz: "Bugun bu kasallik bilan yashash",
+          en: "Living With It Today"
+        },
+
+        title: {
+          uz: "Davolash — faqat dori bilan cheklanmaydi",
+          en: "Care goes beyond medication"
+        },
+
+        text: {
+          uz: "Bugungi kunda Parkinson kasalligini butunlay davolaydigan usul mavjud emas, ammo ko‘plab bemorlar dori-darmonlar va muntazam kuzatuv yordamida uzoq vaqt faol hayot kechirishlari mumkin. Levodopa kabi dorilar harakat bilan bog‘liq belgilarni yengillashtiradi; fizioterapiya, jismoniy faollik, nutq terapiyasi va kundalik faoliyatga moslashtirilgan yordam ham muhim ahamiyatga ega. Ayrim bemorlarda chuqur miya stimulyatsiyasi kabi jarrohlik usullari ko‘rib chiqilishi mumkin. Biroq davolash rejasi har bir insonning alomatlari va ehtiyojlariga qarab shifokor tomonidan tanlanadi. Kasallikning rivojlanishini to‘xtatish yoki uning oldini olishga qaratilgan tadqiqotlar ham davom etmoqda.",
+          en: "There is currently no cure for Parkinson's disease, but many people can remain active for years with appropriate medication and regular medical care. Medicines such as levodopa can relieve movement-related symptoms, while physiotherapy, physical activity, speech therapy, and support with daily activities can also make a difference. For some patients, surgical approaches such as deep brain stimulation may be considered. Treatment plans are tailored by healthcare professionals to each person's symptoms and needs. Research continues into ways to slow progression and ultimately prevent the disease."
+        }
+      }
+    ],
+
+    nextCase: {
+       uz: "Keyingi ish fayli: Ko‘krak bezi saratoni",
+  en: "Next case: Breast Cancer"
+    }
 ];
