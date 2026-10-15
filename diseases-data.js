@@ -1270,7 +1270,9 @@ en: "Next case: Smallpox (coming soon)"
     ],
 
     nextCase: {
-       uz: "Keyingi ish fayli: Ko‘krak bezi saratoni",
-  en: "Next case: Breast Cancer"
+      uz: "Keyingi ish fayli: Ko‘krak bezi saratoni",
+      en: "Next case: Breast Cancer"
     }
+  }
+}
 ];
