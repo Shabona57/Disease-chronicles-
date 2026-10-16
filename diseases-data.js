@@ -1275,4 +1275,205 @@ en: "Next case: Smallpox (coming soon)"
     }
   }
 }
+   ,{
+  id: "breast-cancer",
+  caseNo: "010",
+  category: "onco",
+  categoryLabel: "Oncology",
+  stampStyle: "rose",
+
+  stamp: {
+    uz: "Tarixiy iz",
+    en: "Historical Record"
+  },
+
+  title: {
+    uz: "Ko‘krak bezi saratoni",
+    en: "Breast Cancer"
+  },
+
+  hook: {
+    uz: "Qadimgi Misr tibbiy yozuvlaridan zamonaviy individual davolashgacha — insoniyat ming yillar davomida bu kasallikni tushunishga harakat qildi.",
+    en: "From ancient Egyptian medical records to personalised treatment, humanity has spent millennia trying to understand this disease."
+  },
+
+  year: {
+     uz: "Miloddan avvalgi taxminan 3000–2500-yillar",
+    en: "c. 3000–2500 BCE"
+  },
+
+  detail: {
+    quote: {
+      uz: "Ko‘krakdagi o‘smalar haqidagi eng qadimgi tibbiy tavsiflardan biri qadimgi Misrning Edvin Smit jarrohlik papirusida saqlanib qolgan. O‘sha davrda davolash imkoniyatlari juda cheklangan edi; bugun esa erta aniqlash va zamonaviy davolash ko‘plab bemorlarning natijalarini yaxshilashi mumkin.",
+      en: "One of the earliest medical descriptions of breast tumours survives in ancient Egypt's Edwin Smith Surgical Papyrus. Treatment options were extremely limited at the time; today, early detection and modern therapies can improve outcomes for many patients."
+    },
+
+    vitals: [
+      {
+        label: {
+          uz: "Eng qadimgi tibbiy tavsiflardan biri",
+          en: "One of the earliest medical descriptions"
+        },
+        value: {
+          uz: "Miloddan avvalgi taxminan 3000–2500-yillar",
+          en: "c. 3000–2500 BCE"
+        }
+      },
+      {
+        label: {
+          uz: "Kasallik turi",
+          en: "Type of disease"
+        },
+        value: {
+          uz: "Ko‘krak to‘qimasidagi xavfli o‘sma",
+          en: "Malignant tumour of breast tissue"
+        }
+      },
+       {
+          label: {
+          uz: "Muhim xavf omillari",
+          en: "Important risk factors"
+        },
+        value: {
+          uz: "Yosh, irsiy o‘zgarishlar va ayrim gormonal omillar",
+          en: "Age, inherited variants, and certain hormonal factors"
+        }
+      },
+      {
+        label: {
+          uz: "Bugungi yondashuv",
+          en: "Modern approach"
+        },
+        value: {
+          uz: "Erta aniqlash va individual davolash",
+          en: "Early detection and personalised treatment"
+        }
+      }
+    ],
+
+    sections: [
+      {
+        type: "text",
+        no: "01",
+        heading: {
+          uz: "Kelib chiqishi va xavf omillari",
+          en: "Origins & Risk Factors"
+        },
+        paragraphs: [
+           {
+              uz: "Ko‘krak bezi saratoni ko‘krak to‘qimasidagi ayrim hujayralar nazoratsiz ko‘payib, o‘sma hosil qilganda rivojlanadi. U ko‘pincha sut yo‘llari yoki sut ishlab chiqaruvchi bezchalar hujayralaridan boshlanadi. Ayrim saraton hujayralari atrofdagi to‘qimalarga kirib borishi, limfa tugunlariga yoki tananing boshqa a’zolariga tarqalishi mumkin. Kasallikning turi va rivojlanish darajasi har bir bemorda turlicha bo‘ladi.",
+            en: "Breast cancer develops when certain cells in breast tissue grow uncontrollably and form a tumour. It often begins in the cells lining the milk ducts or milk-producing lobules. Some cancer cells can invade nearby tissue and spread to lymph nodes or other organs. The type and stage of the disease vary from patient to patient."
+          },
+          {
+            uz: "Yoshning ortishi muhim xavf omilidir. BRCA1 va BRCA2 kabi genlardagi ayrim irsiy o‘zgarishlar, yaqin qarindoshlarda kasallik kuzatilgani, ko‘krak qafasi sohasiga avval radiatsiya ta’siri, ayrim gormonal omillar va spirtli ichimlik iste’moli ham xavfni oshirishi mumkin. Biroq xavf omiliga ega bo‘lish albatta saraton rivojlanadi degani emas. Aksincha, kasallik aniqlangan ayrim odamlarda ma’lum xavf omillari bo‘lmasligi mumkin.",
+             en: "Increasing age is an important risk factor. Certain inherited variants in genes such as BRCA1 and BRCA2, a close family history, previous radiation exposure to the chest, some hormonal factors, and alcohol consumption may also increase risk. Having a risk factor does not mean that cancer will inevitably develop. Conversely, some people diagnosed with breast cancer have no known risk factors."
+          }
+        ]
+      },
+
+      {
+        type: "timeline",
+        no: "02",
+        heading: {
+          uz: "Tibbiyot tarixidagi burilishlar",
+          en: "Turning Points in Medical History"
+        },
+        items: [
+          {
+            era: {
+              uz: "Miloddan avvalgi taxminan 3000–2500-yillar — Qadimgi Misr",
+              en: "c. 3000–2500 BCE — Ancient Egypt"
+            },
+            title: {
+              uz: "Papirusda qayd etilgan o‘smalar",
+              en: "Tumours Recorded on Papyrus"
+            },
+            text: {
+               uz: "Edvin Smit jarrohlik papirusida ko‘krakdagi o‘smalarga o‘xshash holatlar tasvirlangan. Matnda ayrim o‘smalar uchun samarali davolash yo‘qligi qayd etilgan. Bu yozuvlar qadimgi tabiblarning kasallikni kuzatish va tavsiflashga uringanini ko‘rsatadi, ammo o‘sha davrda saratonning hujayraviy sabablari ma’lum emas edi.",
+              en: "The Edwin Smith Surgical Papyrus describes cases resembling breast tumours and records that effective treatment was unavailable for some of them. These accounts show early attempts to observe and document the disease, although its cellular causes were not understood at the time."
+            }
+          },
+          {
+            era: {
+              uz: "1882–1894 — AQSh",
+              en: "1882–1894 — United States"
+            },
+            title: {
+              uz: "Radikal mastektomiya davri",
+              en: "The Era of Radical Mastectomy"
+            },
+            text: {
+              uz: "Jarroh William Halsted ko‘krak bezi saratonini davolash uchun keng qamrovli operatsiyani rivojlantirdi. Unda ko‘krak bezi bilan birga ko‘krak mushaklari va qo‘ltiq ostidagi limfa tugunlari ham olib tashlanishi mumkin edi. Bu usul o‘sha davrda muhim qadam bo‘ldi, biroq juda katta jarrohlik aralashuvi hisoblanardi. Keyingi tadqiqotlar barcha bemorlarga bunday keng operatsiya zarur emasligini ko‘rsatdi.",
+               en: "Surgeon William Halsted developed an extensive operation for breast cancer. It could involve removing the breast, underlying chest muscles, and lymph nodes in the armpit. This was an important step at the time, but it was highly invasive. Later research showed that such extensive surgery was not necessary for every patient."
+            }
+          },
+          {
+            era: {
+              uz: "XX asr o‘rtalari — Diagnostika rivojlanadi",
+              en: "Mid-20th Century — Diagnosis Advances"
+            },
+            title: {
+              uz: "Mammografiya kengroq qo‘llanila boshlaydi",
+              en: "Mammography Becomes More Widely Used"
+            },
+            text: {
+              uz: "Ko‘krak bezini rentgen yordamida tekshirish usullari rivojlanib, mammografiya o‘smalarni ayrim hollarda ular qo‘l bilan seziladigan darajaga yetmasidan aniqlash imkonini bera boshladi. Vaqt o‘tishi bilan tasvirlash texnologiyalari va skrining dasturlari takomillashdi. Skriningning kimga va qachon tavsiya etilishi esa yosh, individual xavf va mahalliy klinik ko‘rsatmalarga bog‘liq.",
+              en: "X-ray techniques for examining the breast advanced, and mammography began to make it possible to detect some tumours before they could be felt. Imaging technology and screening programmes improved over time. Recommendations about who should be screened and when depend on age, individual risk, and local clinical guidelines."
+            }
+          },
+           {
+              era: {
+              uz: "XX asrning ikkinchi yarmi — Davolash o‘zgaradi",
+              en: "Second Half of the 20th Century — Treatment Changes"
+            },
+            title: {
+              uz: "Bir nechta davolash usuli birlashtiriladi",
+              en: "Multiple Treatments Are Combined"
+            },
+            text: {
+              uz: "Jarrohlik bilan bir qatorda radioterapiya, kimyoterapiya va gormonal davolashning o‘rni kengaydi. Tadqiqotlar saratonning tarqalish darajasi va biologik xususiyatlarini hisobga olgan holda davolashni tanlash muhimligini ko‘rsatdi. Ayrim bemorlarda ko‘krakni saqlovchi operatsiya va radioterapiya ham samarali yondashuv bo‘lishi mumkin.",
+              en: "Radiotherapy, chemotherapy, and hormonal therapy became increasingly important alongside surgery. Research demonstrated the value of selecting treatment according to the extent and biological characteristics of the cancer. For some patients, breast-conserving surgery combined with radiotherapy can also be an effective approach."
+            }
+          },
+          {
+            era: {
+              uz: "XXI asr — Molekulyar tibbiyot",
+              en: "21st Century — Molecular Medicine"
+            },
+            title: {
+               uz: "Davolash o‘smaning xususiyatlariga moslashtiriladi",
+              en: "Treatment Is Tailored to Tumour Characteristics"
+            },
+            text: {
+              uz: "Bugungi kunda shifokorlar o‘smaning gormonal retseptorlari, HER2 oqsili va boshqa biologik xususiyatlarini tekshirib, davolash rejasini tanlashlari mumkin. Ayrim bemorlarga maqsadli terapiya yoki immunoterapiya mos keladi; boshqalarga esa jarrohlik, radioterapiya, kimyoterapiya yoki gormonal davolashning boshqa kombinatsiyasi tavsiya qilinadi. Bitta usul hamma bemorlarga birdek mos kelmaydi.",
+              en: "Today, clinicians can examine hormone receptors, HER2, and other biological features of a tumour to guide treatment. Targeted therapy or immunotherapy may be suitable for some patients, while others may receive different combinations of surgery, radiotherapy, chemotherapy, or hormonal treatment. No single approach is appropriate for everyone."
+            }
+          }
+        ]
+      },
+
+      {
+        type: "living",
+        no: "03",
+        heading: {
+          uz: "Bugun bu kasallik bilan yashash",
+          en: "Living With It Today"
+        },
+        title: {
+          uz: "Erta aniqlash va individual yordam",
+          en: "Early Detection and Individualised Care"
+        },
+        text: {
+          uz: "Ko‘krak bezi saratonining belgilari orasida yangi tugun, ko‘krakning shakli yoki hajmidagi o‘zgarish, terining tortilishi yoki o‘zgarishi, so‘rg‘ichning ichkariga tortilishi va sut bo‘lmagan ajralma bo‘lishi mumkin. Bunday o‘zgarishlarning aksariyati saraton degani emas, ammo yangi yoki noodatiy belgilarni tibbiyot mutaxassisiga ko‘rsatish muhim. Erta bosqichdagi saraton ba’zan hech qanday belgi bermaydi, shu sababli tegishli yosh va xavf guruhlarida skrining muhim ahamiyatga ega. Tekshiruvlarga klinik ko‘rik, mammografiya, ultratovush tekshiruvi va zarurat bo‘lsa biopsiya kirishi mumkin. Davolash kasallikning turi va bosqichiga qarab jarrohlik, radioterapiya, kimyoterapiya, gormonal yoki maqsadli terapiyani o‘z ichiga oladi. Ruhiy yordam, reabilitatsiya va muntazam kuzatuv ham bemorning hayot sifatini yaxshilashga yordam beradi.",
+           en: "Signs of breast cancer can include a new lump, a change in breast size or shape, skin dimpling or other skin changes, a newly inverted nipple, or discharge that is not breast milk. Most breast changes are not cancer, but new or unusual changes should be assessed by a healthcare professional. Early breast cancer may cause no symptoms, making screening important for people who meet the relevant age and risk criteria. Assessment may include a clinical examination, mammography, ultrasound, and, when needed, a biopsy. Depending on the cancer type and stage, treatment may include surgery, radiotherapy, chemotherapy, hormonal therapy, or targeted therapy. Emotional support, rehabilitation, and follow-up care can also improve quality of life."
+        }
+      }
+    ],
+
+    nextCase: {
+      uz: "Keyingi ish fayli: Mukovistsidoz (Cystic Fibrosis)",
+      en: "Next case: Cystic Fibrosis"
+    }
+  }
+}
 ];
