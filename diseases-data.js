@@ -1677,4 +1677,209 @@ en: "Next case: Smallpox (coming soon)"
     }
   }
 }
+   {
+  id: "tuberculosis",
+  caseNo: "012",
+  category: "infectious",
+  categoryLabel: "Infectious Disease",
+  stampStyle: "rose",
+
+  stamp: {
+    uz: "YUQUMLI KASALLIK",
+    en: "INFECTIOUS DISEASE"
+  },
+
+  title: {
+    uz: "Sil kasalligi",
+    en: "Tuberculosis"
+  },
+
+  hook: {
+    uz: "Ming yillar davomida insoniyatga ta’sir qilgan kasallik qanday qilib davolanadigan bo‘ldi?",
+    en: "How did a disease that affected humanity for thousands of years become treatable?"
+  },
+
+  year: {
+    uz: "Qadimgi davr — hozirgacha",
+    en: "Ancient times — present"
+  },
+
+  detail: {
+    quote: {
+      uz: "Sil kasalligi bakteriyalar sababli yuzaga keladi va ko‘pincha o‘pkani zararlaydi. U oldini olish va davolash mumkin bo‘lgan kasallikdir.",
+      en: "Tuberculosis is caused by bacteria and most often affects the lungs. It is a preventable and treatable disease."
+    },
+
+    vitals: [
+      {
+        label: {
+          uz: "Kasallik turi",
+          en: "Disease type"
+        },
+        value: {
+          uz: "Yuqumli",
+          en: "Infectious"
+        }
+      },
+      {
+        label: {
+          uz: "Qo‘zg‘atuvchi",
+          en: "Causative agent"
+        },
+        value: {
+          uz: "Mycobacterium tuberculosis",
+          en: "Mycobacterium tuberculosis"
+        }
+      },
+      {
+        label: {
+          uz: "Asosiy zararlanadigan a’zo",
+          en: "Main organ affected"
+        },
+        value: {
+          uz: "O‘pka",
+          en: "Lungs"
+        }
+      },
+      {
+        label: {
+          uz: "Davolash",
+          en: "Treatment"
+        },
+        value: {
+          uz: "Maxsus antibiotiklar",
+          en: "Specific antibiotics"
+        }
+      }
+    ],
+
+    sections: [
+      {
+        type: "text",
+        no: "01",
+        heading: {
+          uz: "Kasallikning kelib chiqishi",
+          en: "The Origin of the Disease"
+        },
+        paragraphs: [
+           {
+              uz: "Sil — Mycobacterium tuberculosis bakteriyasi sababli yuzaga keladigan yuqumli kasallik. U ko‘pincha o‘pkani zararlaydi, ammo buyraklar, miya va umurtqa kabi boshqa a’zolarga ham ta’sir qilishi mumkin.",
+            en: "Tuberculosis, or TB, is an infectious disease caused by the bacterium Mycobacterium tuberculosis. It most often affects the lungs but can also affect other organs, including the kidneys, brain, and spine."
+          },
+          {
+            uz: "O‘pka sili bilan kasallangan odam yo‘talganda, aksirganda yoki gapirganda bakteriyalar havoga tarqalishi mumkin. Bakteriyani yuqtirgan har bir odamda faol kasallik rivojlanavermaydi: ayrimlarda infeksiya faol bo‘lmagan holatda qoladi.",
+            en: "Bacteria can spread through the air when a person with pulmonary TB coughs, sneezes, or speaks. Not everyone infected with the bacteria develops active disease; in some people, the infection remains inactive."
+          },
+          {
+            uz: "Faol silning keng tarqalgan belgilari uzoq davom etadigan yo‘tal, ko‘krak og‘rig‘i, holsizlik, vazn yo‘qotish, isitma va tunda terlashdir. Erta tashxis va to‘liq davolash kasallik tarqalishini kamaytirishda muhim ahamiyatga ega.",
+            en: "Common symptoms of active TB include a persistent cough, chest pain, weakness, weight loss, fever, and night sweats. Early diagnosis and completing treatment are important for reducing the spread of the disease."
+          }
+        ]
+      },
+
+      {
+        type: "timeline",
+        no: "02",
+        heading: {
+          uz: "Tarixiy bosqichlar",
+          en: "Historical Timeline"
+        },
+        items: [
+          {
+            era: {
+              uz: "Qadimgi davr",
+              en: "Ancient Times"
+            },
+            title: {
+              uz: "Ming yillik tarix",
+              en: "A Disease with a Long History"
+            },
+            text: {
+              uz: "Arxeologik topilmalar sil insoniyatga ming yillar davomida ta’sir qilib kelganini ko‘rsatadi. O‘tmishda kasallik ko‘pincha ozib ketish va uzoq davom etuvchi yo‘tal bilan bog‘langan.",
+              en: "Archaeological evidence shows that tuberculosis has affected humans for thousands of years. Historically, the disease was associated with wasting and a prolonged cough."
+            }
+          },
+          {
+            era: {
+              uz: "1865",
+              en: "1865"
+            },
+            title: {
+               uz: "Yuqumliligi isbotlandi",
+              en: "Contagious Nature Demonstrated"
+            },
+            text: {
+              uz: "Fransuz shifokori Jean-Antoine Villemin tajribalari sil boshqa odamlarga yuqishi mumkinligini ko‘rsatishga yordam berdi.",
+              en: "Experiments by French physician Jean-Antoine Villemin helped demonstrate that tuberculosis could be transmitted between individuals."
+            }
+          },
+          {
+            era: {
+              uz: "1882",
+              en: "1882"
+            },
+            title: {
+              uz: "Sil bakteriyasi aniqlandi",
+              en: "The TB Bacterium Identified"
+            },
+            text: {
+              uz: "1882-yil 24-martda Robert Koch sil kasalligini keltirib chiqaruvchi bakteriyani aniqlaganini e’lon qildi. Bu kasallikni ilmiy o‘rganish va unga qarshi kurashishda muhim burilish bo‘ldi.",
+              en: "On March 24, 1882, Robert Koch announced the discovery of the bacterium that causes tuberculosis. This was a major turning point in understanding and controlling the disease."
+            }
+          },
+          {
+            era: {
+              uz: "1921",
+              en: "1921"
+            },
+            title: {
+              uz: "BCG vaksinasi",
+              en: "The BCG Vaccine"
+            },
+            text: {
+              uz: "BCG vaksinasi qo‘llanila boshlandi. U ayniqsa bolalarda silning og‘ir shakllaridan himoya qilishda muhim rol o‘ynaydi.",
+              en: "The BCG vaccine came into use. It plays an important role in protecting children against severe forms of tuberculosis."
+            }
+          },
+          {
+            era: {
+               uz: "1940–1950-yillar",
+              en: "1940s–1950s"
+            },
+            title: {
+              uz: "Antibiotiklar davri",
+              en: "The Era of Antibiotics"
+            },
+            text: {
+              uz: "Streptomitsin va boshqa silga qarshi dorilarning kashf etilishi davolash imkoniyatlarini tubdan o‘zgartirdi. Bir nechta doridan iborat davolash usullari kasallikni samarali nazorat qilishga yordam berdi.",
+              en: "The discovery of streptomycin and other anti-TB medicines transformed treatment. Combination drug therapy made it possible to control the disease much more effectively."
+            }
+          }
+        ]
+      },
+
+      {
+        type: "living",
+        no: "03",
+        heading: {
+          uz: "Kasallik bilan yashash",
+          en: "Living with the Disease"
+        },
+        title: {
+          uz: "Tashxis, davolash va oldini olish",
+          en: "Diagnosis, Treatment, and Prevention"
+        },
+        text: {
+          uz: "Silni aniqlash uchun shifokorlar balg‘am tahlili, molekulyar testlar, rentgen va boshqa tekshiruvlardan foydalanishlari mumkin. Faol sil odatda bir nechta antibiotik bilan davolanadi va davolash rejasi bir necha oy davom etishi mumkin. Dorilarni shifokor ko‘rsatmasiga binoan to‘liq qabul qilish juda muhim, chunki davolashni muddatidan oldin to‘xtatish dori-darmonlarga chidamli sil rivojlanishiga olib kelishi mumkin. BCG vaksinasi bolalarni kasallikning ayrim og‘ir shakllaridan himoya qiladi.",
+          en: "Doctors may use sputum tests, molecular tests, chest X-rays, and other examinations to diagnose TB. Active TB is usually treated with several antibiotics, and treatment may last for several months. Completing the prescribed course is essential because stopping treatment early can contribute to drug-resistant TB. The BCG vaccine helps protect children against certain severe forms of the disease."
+        }
+      }
+    ],
+
+    nextCase: {
+      uz: "Keyingi ish fayli: Gipertoniya (Hypertension)",
+      en: "Next case: Hypertension"
+    }
+  }
+}
 ];
