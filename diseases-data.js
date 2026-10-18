@@ -1476,4 +1476,205 @@ en: "Next case: Smallpox (coming soon)"
     }
   }
 }
+   ,{
+  id: "cystic-fibrosis",
+  caseNo: "011",
+  category: "genetic",
+  categoryLabel: "Genetic",
+  stampStyle: "sage",
+
+  stamp: {
+    uz: "Irsiy iz",
+    en: "Genetic Record"
+  },
+
+  title: {
+    uz: "Mukovistsidoz",
+    en: "Cystic Fibrosis"
+  },
+
+  hook: {
+    uz: "Bir genetik o‘zgarish organizmdagi shilliq va tuz muvozanatini buzadi — 1938-yildagi klinik tavsifdan zamonaviy maqsadli davolashgacha bo‘lgan yo‘l tibbiyot tarixini o‘zgartirdi.",
+    en: "A genetic change disrupts the body's mucus and salt balance — the journey from a clinical description in 1938 to modern targeted treatment has transformed medical history."
+  },
+
+  year: {
+    uz: "1938",
+    en: "1938"
+  },
+
+  detail: {
+    quote: {
+      uz: "1938-yilda amerikalik patolog Dorothy Andersen mukovistsidozni alohida kasallik sifatida batafsil tavsifladi. Keyingi o‘n yilliklarda olimlar uning irsiy sababini, ter bilan tuz yo‘qotilishi o‘rtasidagi bog‘liqlikni va kasallikni keltirib chiqaruvchi genni aniqladilar.",
+       en: "In 1938, American pathologist Dorothy Andersen described cystic fibrosis in detail as a distinct disease. Over the following decades, researchers identified its genetic basis, the link between the condition and salt loss in sweat, and the gene responsible for it."
+    },
+
+    vitals: [
+      {
+        label: {
+          uz: "Muhim tarixiy sana",
+          en: "Key historical date"
+        },
+        value: {
+          uz: "1938 — kasallik batafsil tavsiflandi",
+          en: "1938 — the disease was characterised"
+        }
+      },
+      {
+        label: {
+          uz: "Kelib chiqishi",
+          en: "Cause"
+        },
+        value: {
+          uz: "CFTR genidagi kasallik keltirib chiqaruvchi o‘zgarishlar",
+          en: "Disease-causing variants in the CFTR gene"
+        }
+      },
+      {
+        label: {
+          uz: "Asosiy ta’sirlanadigan a’zolar",
+          en: "Main organs affected"
+        },
+        value: {
+          uz: "O‘pka, oshqozon osti bezi va ichaklar",
+          en: "Lungs, pancreas, and intestines"
+        }
+      },
+      {
+        label: {
+          uz: "Yuqumlilik",
+          en: "Contagiousness"
+        },
+        value: {
+          uz: "Yuqumli emas — irsiy kasallik",
+          en: "Not contagious — an inherited disease"
+        }
+      }
+    ],
+
+    sections: [
+      {
+        type: "text",
+        no: "01",
+        heading: {
+          uz: "Kelib chiqishi va sabablari",
+          en: "Origins & Causes"
+        },
+        paragraphs: [
+          {
+            uz: "Mukovistsidoz — CFTR deb ataladigan genning kasallik keltirib chiqaruvchi o‘zgarishlari tufayli yuzaga keladigan irsiy kasallik. Ushbu gen hujayralar membranasidagi tuzlar, jumladan xlorid ionlari harakatini boshqarishga yordam beradigan oqsilni kodlaydi. Oqsil yetarlicha ishlamaganda, ayrim a’zolar yuzasidagi suv va tuz muvozanati buziladi. Natijada shilliq modda odatdagidan quyuq va yopishqoq bo‘lib qolishi mumkin. U nafas yo‘llarida to‘planib, nafas olishni qiyinlashtiradi va infeksiyalar xavfini oshiradi. Oshqozon osti bezida esa hazm fermentlarining ichakka yetib borishiga xalaqit berishi mumkin.",
+             en: "Cystic fibrosis is an inherited disease caused by disease-causing variants in a gene called CFTR. This gene provides instructions for a protein that helps regulate the movement of salts, including chloride ions, across cell membranes. When the protein does not function properly, the balance of salt and water on the surfaces of certain organs is disrupted. As a result, mucus can become unusually thick and sticky. It may build up in the airways, making breathing difficult and increasing the risk of infections. In the pancreas, it can also interfere with digestive enzymes reaching the intestine."
+          },
+          {
+            uz: "Mukovistsidoz autosom-retsessiv yo‘l bilan irsiylanadi: kasallik rivojlanishi uchun odam odatda CFTR genining o‘zgargan nusxasini har ikki ota-onasidan olishi kerak. Bitta o‘zgargan nusxani meros olgan odam ko‘pincha kasallik tashuvchisi bo‘ladi, lekin odatda mukovistsidozga ega bo‘lmaydi. Kasallik yuqumli emas va odamdan odamga oddiy muloqot orqali yuqmaydi. Belgilar hamma bemorlarda bir xil bo‘lmaydi: ayrimlarida nafas yo‘llari muammolari ustun bo‘lsa, boshqalarida ovqat hazm qilish, o‘sish yoki boshqa a’zolar bilan bog‘liq muammolar ko‘proq kuzatilishi mumkin.",
+            en: "Cystic fibrosis is inherited in an autosomal recessive pattern: a person generally needs to inherit a disease-causing CFTR variant from each parent to develop the condition. Someone who inherits only one altered copy is usually a carrier and does not have cystic fibrosis. The disease is not contagious and cannot spread through ordinary contact. Symptoms also differ between individuals: some experience more respiratory problems, while others have more pronounced digestive, growth-related, or other organ complications."
+          }
+        ]
+      },
+
+      {
+        type: "timeline",
+        no: "02",
+        heading: {
+          uz: "Tibbiyot tarixidagi burilishlar",
+          en: "Turning Points in Medical History"
+        },
+        items: [
+          {
+            era: {
+              uz: "1938 — Nyu-York, AQSh",
+              en: "1938 — New York, USA"
+            },
+            title: {
+              uz: "Dorothy Andersen kasallikni tavsiflaydi",
+              en: "Dorothy Andersen Describes the Disease"
+            },
+            text: {
+               uz: "Patolog Dorothy Andersen bolalarda kuzatilgan oshqozon osti bezi va nafas yo‘llari bilan bog‘liq o‘zgarishlarni o‘rganib, kasallikni alohida klinik holat sifatida tavsifladi. Uning tadqiqoti mukovistsidozni boshqa kasalliklardan ajratib tushunish uchun muhim asos yaratdi. O‘sha davrda kasallikning genetik mexanizmi hali ma’lum emas edi va davolash imkoniyatlari juda cheklangan bo‘lgan.",
+              en: "Pathologist Dorothy Andersen studied pancreatic and respiratory abnormalities in children and described the condition as a distinct disease. Her research established an important foundation for distinguishing cystic fibrosis from other disorders. At the time, its genetic mechanism was still unknown and treatment options were extremely limited."
+            }
+          },
+          {
+            era: {
+              uz: "1940–1950-yillar — AQSh",
+              en: "1940s–1950s — United States"
+            },
+            title: {
+              uz: "Ter tarkibidagi tuz kasallik haqida muhim ma’lumot beradi",
+              en: "Salt in Sweat Provides a Crucial Clue"
+            },
+            text: {
+              uz: "Kuzatuvlar mukovistsidozli bemorlarning terida ko‘proq tuz yo‘qotishini ko‘rsatdi. 1950-yillardagi tadqiqotlar, jumladan Paul di Sant’Agnese va hamkasblarining ishlari, ter tarkibidagi elektrolitlar o‘zgarishini kasallik bilan bog‘ladi. Bu kashfiyot mukovistsidozni aniqlash uchun terdagi xlorid miqdorini o‘lchash usulini rivojlantirishga yo‘l ochdi.",
+              en: "Observations showed that people with cystic fibrosis lose more salt through their sweat. Research in the 1950s, including work by Paul di Sant'Agnese and colleagues, linked changes in sweat electrolytes to the disease. This discovery paved the way for measuring chloride in sweat as a diagnostic test."
+            }
+          },
+          {
+            era: {
+              uz: "1960-yillar — Diagnostika rivojlanadi",
+              en: "1960s — Diagnosis Advances"
+            },
+            title: {
+              uz: "Ter testi klinik amaliyotga kiradi",
+              en: "The Sweat Test Enters Clinical Practice"
+            },
+            text: {
+               uz: "Ter tarkibidagi xlorid miqdorini o‘lchash usuli mukovistsidozni tasdiqlashda muhim vositaga aylandi. Bu tekshiruv shifokorlarga kasallikni klinik belgilar bilangina emas, balki aniqroq laboratoriya natijalari bilan ham baholash imkonini berdi. Keyinchalik genetik tekshiruvlar paydo bo‘lishi diagnostika imkoniyatlarini yanada kengaytirdi.",
+              en: "Measuring chloride levels in sweat became an important method for confirming cystic fibrosis. It allowed clinicians to assess the condition using laboratory evidence rather than relying on symptoms alone. Genetic testing later expanded diagnostic capabilities further."
+            }
+          },
+          {
+            era: {
+              uz: "1989 — Xalqaro ilmiy hamkorlik",
+              en: "1989 — International Scientific Collaboration"
+            },
+            title: {
+              uz: "CFTR geni aniqlanadi",
+              en: "The CFTR Gene Is Identified"
+            },
+            text: {
+              uz: "Lap-Chee Tsui, Jack Riordan, Francis Collins va boshqa olimlarning xalqaro hamkorligi natijasida mukovistsidoz bilan bog‘liq CFTR geni aniqlanib, tavsiflandi. Bu kashfiyot kasallikning molekulyar sababini tushunishda katta burilish yasadi. Shuningdek, u genetik diagnostika va kasallikning asosiy mexanizmlariga ta’sir ko‘rsatishga qaratilgan dori vositalarini ishlab chiqish uchun zamin yaratdi.",
+              en: "Through international collaboration, Lap-Chee Tsui, Jack Riordan, Francis Collins, and other researchers identified and characterised the CFTR gene associated with cystic fibrosis. This discovery transformed understanding of the disease at the molecular level and laid the groundwork for genetic diagnosis and treatments designed to target underlying mechanisms."
+            }
+          },
+          {
+            era: {
+              uz: "1990-yillar — Maqsadli davolashga yo‘l",
+              en: "1990s — A Path Toward Targeted Treatment"
+            },
+            title: {
+              uz: "Kasallik mexanizmlariga qaratilgan tadqiqotlar",
+              en: "Research Targets the Underlying Mechanisms"
+            },
+            text: {
+              uz: "CFTR oqsilining vazifasi va genetik o‘zgarishlarning ta’siri yaxshiroq tushunila boshladi. Nafas yo‘llaridagi quyuq shilliqni yengillashtirishga qaratilgan dori vositalari va infeksiyalarni nazorat qilish usullari rivojlandi. Keyingi yillarda esa ayrim CFTR o‘zgarishlariga mos ta’sir ko‘rsatadigan modulyator dorilar ishlab chiqildi. Ular barcha bemorlarga mos kelmaydi, chunki samarasi odamdagi genetik o‘zgarishlarga bog‘liq.",
+              en: "Researchers gained a clearer understanding of CFTR protein function and the effects of genetic variants. Treatments to help manage thick airway mucus and control infections advanced. In later years, modulator medicines were developed to target certain CFTR variants. These medicines are not suitable for everyone because their effectiveness depends on a person's specific genetic changes."
+            }
+          }
+        ]
+      },
+
+      {
+        type: "living",
+        no: "03",
+        heading: {
+          uz: "Bugun bu kasallik bilan yashash",
+          en: "Living With It Today"
+        },
+        title: {
+           uz: "Uzoq muddatli va individual parvarish",
+          en: "Long-Term, Individualised Care"
+        },
+        text: {
+          uz: "Mukovistsidozni butunlay davolaydigan usul hozircha mavjud emas, biroq zamonaviy parvarish ko‘plab bemorlarning sog‘lig‘i va umr davomiyligini yaxshilashga yordam bermoqda. Davolash nafas yo‘llarini tozalash usullari, jismoniy faollik, zaruratga qarab antibiotiklar, ovqat hazm qilishga yordam beruvchi fermentlar va ovqatlanish holatini kuzatishni o‘z ichiga olishi mumkin. Ayrim bemorlarga ularning CFTR genetik o‘zgarishlariga mos modulyator dorilar tavsiya etiladi. Yangi tug‘ilgan chaqaloqlarni skrining qilish, ter testi va genetik tekshiruvlar tashxis qo‘yishga yordam beradi. Muntazam ravishda mukovistsidoz bo‘yicha ixtisoslashgan tibbiy jamoa kuzatuvida bo‘lish muhim. Davolash rejasi har bir bemorning yoshi, belgilari, tekshiruv natijalari va genetik xususiyatlariga qarab belgilanadi.",
+          en: "There is currently no universal cure for cystic fibrosis, but modern care is helping many people improve their health and life expectancy. Management may include airway-clearance techniques, physical activity, antibiotics when needed, pancreatic enzyme replacement, and nutritional monitoring. Some patients are eligible for CFTR modulator medicines based on their specific genetic variants. Newborn screening, sweat testing, and genetic testing can help establish the diagnosis. Regular follow-up with a specialised cystic fibrosis care team is important. Treatment is tailored to each person's age, symptoms, test results, and genetic characteristics."
+        }
+      }
+    ],
+
+    nextCase: {
+       uz: "Keyingi ish fayli: Sil kasalligi",
+      en: "Next case: Tuberculosis"
+    }
+  }
+}
 ];
