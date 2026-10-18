@@ -1676,7 +1676,7 @@ en: "Next case: Smallpox (coming soon)"
       en: "Next case: Tuberculosis"
     }
   }
-}
+},
    {
   id: "tuberculosis",
   caseNo: "012",
