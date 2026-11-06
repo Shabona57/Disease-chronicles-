@@ -1881,5 +1881,299 @@ en: "Next case: Smallpox (coming soon)"
       en: "Next case: Hypertension"
     }
   }
+},
+{
+  id: "hypertension",
+  caseNo: "013",
+  category: "cardio",
+  categoryLabel: "Cardiovascular",
+  stampStyle: "rose",
+
+  stamp: {
+    uz: "YURAK-QON TOMIR",
+    en: "CARDIOVASCULAR"
+  },
+
+  title: {
+    uz: "Gipertoniya",
+    en: "Hypertension"
+  },
+
+  hook: {
+    uz: "Ba’zan eng xavfli kasalliklar hech qanday aniq belgi bermaydi.",
+    en: "Sometimes the most dangerous conditions give no obvious warning signs."
+  },
+
+  year: {
+    uz: "Qadimdan ma’lum — zamonaviy tibbiyot davri",
+    en: "Known since antiquity — modern medical era"
+  },
+
+  detail: {
+    quote: {
+      uz: "Qon bosimini nazorat qilish yurak, miya va buyraklarni himoya qilishga yordam beradi.",
+      en: "Controlling blood pressure helps protect the heart, brain, and kidneys."
+    },
+
+    vitals: [
+       {
+        label: { uz: "Kasallik turi", en: "Condition type" },
+        value: { uz: "Surunkali", en: "Chronic" }
+      },
+      {
+        label: { uz: "Asosiy ta’sir", en: "Main effect" },
+        value: { uz: "Qon tomirlari", en: "Blood vessels" }
+      },
+      {
+        label: { uz: "Yuqumlilik", en: "Contagious" },
+        value: { uz: "Yo‘q", en: "No" }
+      }
+    ],
+
+    sections: [
+      {
+        type: "text",
+        no: "01",
+        heading: {
+          uz: "Yashirin xavf",
+          en: "The Hidden Threat"
+        },
+        paragraphs: [
+          {
+            uz: "Gipertoniya — qonning arteriya devorlariga uzoq vaqt davomida me’yordan yuqori bosim bilan ta’sir qilishi bilan tavsiflanadigan holat. U ko‘pincha sezilarli alomatlarsiz kechadi, shuning uchun odam o‘zida yuqori qon bosimi borligini bilmasligi mumkin.",
+            en: "Hypertension is a condition in which blood persistently exerts abnormally high pressure against artery walls. It often develops without noticeable symptoms, meaning a person may not know they have high blood pressure."
+          },
+  {
+     uz: "Davolanmagan gipertoniya yurak kasalliklari, insult va buyrak shikastlanishi xavfini oshirishi mumkin. Qon bosimini muntazam o‘lchash kasallikni erta aniqlashga yordam beradi.",
+            en: "Untreated hypertension can increase the risk of heart disease, stroke, and kidney damage. Regular blood pressure checks can help detect it early."
+          }
+        ]
+      },
+
+      {
+        type: "timeline",
+        no: "02",
+        heading: {
+          uz: "Kashfiyotlar tarixi",
+          en: "A History of Discovery"
+        },
+        items: [
+          {
+            era: { uz: "Qadimgi davr", en: "Ancient times" },
+            title: {
+              uz: "Qon aylanishini tushunish",
+              en: "Understanding Blood Circulation"
+            },
+            text: {
+              uz: "Qadimgi tabiblar yurak va qon tomirlari haqida kuzatuvlar olib borishgan, ammo qon bosimini aniq o‘lchash imkoniyati bo‘lmagan.",
+              en: "Ancient physicians made observations about the heart and blood vessels, but they could not accurately measure blood pressure."
+            }
+          },
+          {
+            era: { uz: "1733-yil", en: "1733" },
+            title: {
+              uz: "Qon bosimini o‘lchash tajribasi",
+              en: "An Early Blood Pressure Experiment"
+            },
+            text: {
+               uz: "Stiven Heyls hayvonlarda arterial qon bosimini o‘lchash bo‘yicha dastlabki tajribalardan birini o‘tkazgan.",
+              en: "Stephen Hales conducted one of the earliest experiments measuring arterial blood pressure in animals."
+            }
+          },
+          {
+            era: { uz: "1896-yil", en: "1896" },
+            title: {
+              uz: "Amaliy o‘lchash usuli",
+              en: "A Practical Measurement Method"
+            },
+            text: {
+              uz: "Skipione Riva-Rochchi manjetli qon bosimi o‘lchagichini ishlab chiqib, o‘lchashni ancha qulaylashtirgan.",
+              en: "Scipione Riva-Rocci developed a cuff-based blood pressure monitor, making measurement more practical."
+            }
+          },
+          {
+            era: { uz: "XX asr", en: "20th century" },
+            title: {
+              uz: "Davolashning rivojlanishi",
+              en: "Advances in Treatment"
+            },
+            text: {
+              uz: "Qon bosimini nazorat qiluvchi dorilar va keng tarqalgan tekshiruv usullari rivojlanib, gipertoniyani boshqarish imkoniyatlarini yaxshilagan.",
+              en: "The development of blood-pressure-lowering medicines and routine screening improved the ability to manage hypertension."
+            }
+          }
+        ]
+      },
+
+      {
+        type: "living",
+        no: "03",
+        heading: {
+          uz: "Gipertoniya bilan yashash",
+          en: "Living with Hypertension"
+        },
+        title: {
+           uz: "Nazorat qilish va oldini olish",
+          en: "Control and Prevention"
+        },
+        text: {
+          uz: "Gipertoniyani nazorat qilish uchun qon bosimini muntazam tekshirish, tuz iste’molini kamaytirish, jismoniy faollikni oshirish, muvozanatli ovqatlanish va chekishdan saqlanish foydali. Ayrim odamlarga shifokor buyurgan dorilar ham kerak bo‘ladi. Davolash rejasi har bir insonning holatiga qarab belgilanadi.",
+          en: "Managing hypertension may involve regular blood pressure checks, reducing salt intake, staying physically active, eating a balanced diet, and avoiding smoking. Some people also need medicines prescribed by a healthcare professional. Treatment is tailored to each person's circumstances."
+        }
+      }
+    ],
+
+    nextCase: {
+      uz: "Keyingi ish fayli: Revmatoid artrit",
+      en: "Next case: Rheumatoid Arthritis"
+    }
+  }
+},
+{
+  id: "rheumatoid-arthritis",
+  caseNo: "014",
+  category: "autoimmune",
+  categoryLabel: "Autoimmune Disease",
+  stampStyle: "sage",
+
+  stamp: {
+    uz: "AUTOIMMUN KASALLIK",
+    en: "AUTOIMMUNE DISEASE"
+  },
+
+  title: {
+    uz: "Revmatoid artrit",
+    en: "Rheumatoid Arthritis"
+  },
+
+  hook: {
+    uz: "Immun tizimi tanani himoya qilish o‘rniga uning bo‘g‘imlariga hujum qilishi mumkin.",
+    en: "The immune system can attack the body's joints instead of protecting them."
+  },
+
+  year: {
+    uz: "1800-yillar — zamonaviy immunologiya davri",
+    en: "1800s — modern immunology era"
+  },
+
+  detail: {
+    quote: {
+      uz: "Yallig‘lanishni erta nazorat qilish bo‘g‘imlarni uzoq muddatli shikastlanishdan himoya qilishga yordam beradi.",
+      en: "Early control of inflammation can help protect joints from long-term damage."
+    },
+
+    vitals: [
+  {
+     label: { uz: "Kasallik turi", en: "Condition type" },
+        value: { uz: "Autoimmun", en: "Autoimmune" }
+      },
+      {
+        label: { uz: "Asosiy ta’sir", en: "Main effect" },
+        value: { uz: "Bo‘g‘imlar", en: "Joints" }
+      },
+      {
+        label: { uz: "Yuqumlilik", en: "Contagious" },
+        value: { uz: "Yo‘q", en: "No" }
+      }
+    ],
+
+    sections: [
+      {
+        type: "text",
+        no: "01",
+        heading: {
+          uz: "Immun tizimining xatosi",
+          en: "When the Immune System Misfires"
+        },
+        paragraphs: [
+          {
+            uz: "Revmatoid artrit — immun tizimi bo‘g‘imlarni qoplaydigan to‘qimalarga noto‘g‘ri hujum qilishi natijasida yuzaga keladigan surunkali yallig‘lanish kasalligi. U ko‘pincha qo‘l va oyoqlarning mayda bo‘g‘imlariga ta’sir qiladi.",
+            en: "Rheumatoid arthritis is a chronic inflammatory disease in which the immune system mistakenly attacks the tissues lining the joints. It often affects the small joints of the hands and feet."
+          },
+          {
+            uz: "Belgilari orasida bo‘g‘imlarda og‘riq, shish, issiqlik va ayniqsa ertalab kuzatiladigan qotishish bor. Vaqtida davolanmasa, kasallik bo‘g‘imlarga zarar yetkazishi va boshqa a’zolarga ham ta’sir qilishi mumkin. U oddiy yoshga bog‘liq osteoartritdan farq qiladi.",
+            en: "Symptoms include joint pain, swelling, warmth, and stiffness that is often worse in the morning. Without timely treatment, the disease can damage joints and affect other organs. It differs from ordinary age-related osteoarthritis."
+          }
+        ]
+      },
+
+      {
+        type: "timeline",
+        no: "02",
+        heading: {
+           uz: "Tibbiyot tarixidagi bosqichlar",
+          en: "Milestones in Medical History"
+        },
+        items: [
+          {
+            era: { uz: "1800-yillar boshi", en: "Early 1800s" },
+            title: {
+              uz: "Kasallikning tavsiflanishi",
+              en: "Description of the Disease"
+            },
+            text: {
+              uz: "Fransuz shifokori Ogyusten Yakob Landre-Bove revmatoid artritga mos keladigan alomatlarni batafsil tasvirlagan.",
+              en: "French physician Augustin-Jacob Landré-Beauvais described symptoms consistent with rheumatoid arthritis."
+            }
+          },
+          {
+            era: { uz: "1859-yil", en: "1859" },
+            title: {
+              uz: "Atamaning shakllanishi",
+              en: "A Name Takes Shape"
+            },
+            text: {
+              uz: "Alfred Baring Garrod kasallikni boshqa bo‘g‘im muammolaridan farqlashga yordam bergan tavsiflarni rivojlantirgan.",
+              en: "Alfred Baring Garrod advanced descriptions that helped distinguish the condition from other joint disorders."
+            }
+          },
+          {
+            era: { uz: "XX asr", en: "20th century" },
+            title: {
+               uz: "Davolash usullarining rivojlanishi",
+              en: "Treatment Advances"
+            },
+            text: {
+              uz: "Yallig‘lanishga qarshi dorilar va kasallik kechishini o‘zgartiruvchi preparatlar davolash imkoniyatlarini kengaytirgan.",
+              en: "Anti-inflammatory medicines and disease-modifying drugs expanded treatment options."
+            }
+          },
+          {
+            era: { uz: "XX asr oxiri — XXI asr", en: "Late 20th century — 21st century" },
+            title: {
+              uz: "Biologik davolash davri",
+              en: "The Era of Biologic Therapies"
+            },
+            text: {
+              uz: "Biologik preparatlar va maqsadli davolash usullari ko‘plab bemorlarda yallig‘lanishni yaxshiroq nazorat qilishga yordam berdi.",
+              en: "Biologic medicines and targeted therapies have helped many patients achieve better control of inflammation."
+            }
+          }
+        ]
+      },
+
+      {
+        type: "living",
+        no: "03",
+        heading: {
+          uz: "Revmatoid artrit bilan yashash",
+          en: "Living with Rheumatoid Arthritis"
+        },
+        title: {
+          uz: "Erta tashxis va uzoq muddatli nazorat",
+          en: "Early Diagnosis and Long-Term Management"
+        },
+        text: {
+          uz: "Revmatoid artritni butunlay yo‘qotadigan universal davo hozircha mavjud emas, ammo kasallikni nazorat qilish mumkin. Davolashda kasallik kechishini o‘zgartiruvchi dorilar, muntazam tibbiy kuzatuv, mos jismoniy mashqlar va bo‘g‘imlarni asrash muhim. Erta tashxis qo‘yish bo‘g‘im shikastlanishini kamaytirishga yordam beradi.",
+           en: "There is currently no universal cure for rheumatoid arthritis, but the disease can be managed. Treatment may include disease-modifying medicines, regular medical monitoring, suitable exercise, and joint protection. Early diagnosis can help reduce joint damage."
+        }
+      }
+    ],
+
+    nextCase: {
+       uz: "Keyingi ish fayli: Gipertireoz (Hyperthyroidism)",
+      en: "Next case: Hyperthyroidism"
+    }
+  }
 }
 ];
