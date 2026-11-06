@@ -2175,5 +2175,325 @@ en: "Next case: Smallpox (coming soon)"
       en: "Next case: Hyperthyroidism"
     }
   }
+},
+   {
+  id: "hypothyroidism",
+  caseNo: "016",
+  category: "endocrine",
+  categoryLabel: "Endocrine Disease",
+  stampStyle: "sage",
+
+  stamp: {
+    uz: "ENDOKRIN KASALLIK",
+    en: "ENDOCRINE DISEASE"
+  },
+
+  title: {
+    uz: "Gipotireoz",
+    en: "Hypothyroidism"
+  },
+
+  hook: {
+    uz: "Tanadagi ko‘plab jarayonlarni boshqaradigan qalqonsimon bez faoliyati sekinlashsa nima yuz beradi?",
+    en: "What happens when the thyroid gland slows down, affecting many processes throughout the body?"
+  },
+
+  year: {
+    uz: "XIX asr — zamonaviy endokrinologiya davri",
+    en: "19th century — modern endocrinology era"
+  },
+
+  detail: {
+    quote: {
+      uz: "Qalqonsimon bez ishlab chiqaradigan gormonlar organizmning energiya almashinuvi va ko‘plab muhim faoliyatlarini boshqaradi.",
+      en: "Thyroid hormones regulate the body's energy metabolism and many essential functions."
+    },
+
+    vitals: [
+      {
+        label: { uz: "Kasallik turi", en: "Condition type" },
+        value: { uz: "Surunkali endokrin", en: "Chronic endocrine" }
+      },
+      {
+        label: { uz: "Asosiy ta’sir", en: "Main effect" },
+        value: { uz: "Qalqonsimon bez", en: "Thyroid gland" }
+      },
+       {
+          label: { uz: "Yuqumlilik", en: "Contagious" },
+        value: { uz: "Yo‘q", en: "No" }
+      }
+    ],
+
+    sections: [
+      {
+        type: "text",
+        no: "01",
+        heading: {
+          uz: "Organizm faoliyatining sekinlashishi",
+          en: "When the Body Slows Down"
+        },
+        paragraphs: [
+          {
+            uz: "Gipotireoz — qalqonsimon bez organizm ehtiyojini qondirish uchun yetarli miqdorda gormon ishlab chiqarmaydigan holat. Qalqonsimon bez gormonlari moddalar almashinuvi, tana harorati, yurak faoliyati va boshqa muhim jarayonlarni boshqarishda qatnashadi.",
+            en: "Hypothyroidism is a condition in which the thyroid gland does not produce enough hormones to meet the body's needs. Thyroid hormones help regulate metabolism, body temperature, heart function, and other essential processes."
+          },
+          {
+            uz: "Kasallik charchoq, sovuqqa sezgirlik, qabziyat, quruq teri va fikrlash jarayonining sekinlashishi kabi belgilar bilan namoyon bo‘lishi mumkin. Keng tarqalgan sabablardan biri Hashimoto tireoiditi bo‘lib, bunda immun tizimi qalqonsimon bezga hujum qiladi. Yod yetishmovchiligi, ayrim davolash usullari va bez faoliyatining tug‘ma buzilishlari ham sabab bo‘lishi mumkin.",
+            en: "The condition may cause fatigue, increased sensitivity to cold, constipation, dry skin, and slowed thinking. One common cause is Hashimoto's thyroiditis, an autoimmune disorder in which the immune system attacks the thyroid gland. Iodine deficiency, certain medical treatments, and congenital disorders can also cause hypothyroidism."
+          }
+        ]
+      },
+
+      {
+        type: "timeline",
+        no: "02",
+        heading: {
+          uz: "Kashfiyotlar tarixi",
+          en: "A History of Discovery"
+        },
+        items: [
+           {
+              era: { uz: "XIX asr o‘rtalari", en: "Mid-19th century" },
+            title: {
+              uz: "Qalqonsimon bezning ahamiyati",
+              en: "The Importance of the Thyroid"
+            },
+            text: {
+              uz: "Tadqiqotchilar qalqonsimon bezning organizm rivojlanishi va faoliyatidagi muhim rolini tobora yaxshiroq tushuna boshladilar.",
+              en: "Researchers gradually developed a better understanding of the thyroid gland's important role in human development and body function."
+            }
+          },
+          {
+            era: { uz: "1883-yil", en: "1883" },
+            title: {
+              uz: "Qalqonsimon bez olib tashlanishining oqibatlari",
+              en: "Consequences of Thyroid Removal"
+            },
+            text: {
+              uz: "Shveysariyalik jarroh Teodor Kocher qalqonsimon bez olib tashlanganidan keyin ayrim bemorlarda yuzaga keladigan jiddiy o‘zgarishlarni tasvirlagan.",
+              en: "Swiss surgeon Theodor Kocher described serious changes that could occur in patients after the removal of the thyroid gland."
+            }
+          },
+          {
+            era: { uz: "1891-yil", en: "1891" },
+            title: {
+              uz: "Gormon o‘rnini bosuvchi davolash",
+              en: "Early Hormone Replacement"
+            },
+            text: {
+              uz: "Jorj Myurrey qalqonsimon bez ekstraktidan foydalanib, miksedema bilan og‘rigan bemorni davolash bo‘yicha dastlabki muvaffaqiyatli tajribalardan birini e’lon qilgan.",
+              en: "George Murray reported one of the first successful treatments of a patient with myxoedema using thyroid extract."
+            }
+          },
+          {
+            era: { uz: "1914-yil", en: "1914" },
+            title: {
+               uz: "Tiroksinning ajratib olinishi",
+              en: "Isolation of Thyroxine"
+            },
+            text: {
+              uz: "Edvard Kendall qalqonsimon bez gormoni tiroksinni ajratib olgan. Bu gormonlar haqidagi ilmiy tushunchalarni rivojlantirishda muhim bosqich bo‘lgan.",
+              en: "Edward Kendall isolated the thyroid hormone thyroxine, marking an important step in the scientific understanding of thyroid hormones."
+            }
+          },
+          {
+            era: { uz: "1927-yil", en: "1927" },
+            title: {
+              uz: "Tiroksinning kimyoviy tuzilishi",
+              en: "The Chemical Structure of Thyroxine"
+            },
+            text: {
+              uz: "Charlz Harington va Jorj Barger tiroksinning kimyoviy tuzilishini aniqlash hamda uni sintez qilish bo‘yicha muhim ishlarni amalga oshirgan.",
+              en: "Charles Harington and George Barger made important advances in determining and synthesizing the chemical structure of thyroxine."
+            }
+          }
+        ]
+      },
+
+      {
+        type: "living",
+        no: "03",
+        heading: {
+          uz: "Gipotireoz bilan yashash",
+          en: "Living with Hypothyroidism"
+        },
+        title: {
+          uz: "Gormonlar muvozanatini tiklash",
+          en: "Restoring Hormonal Balance"
+        },
+        text: {
+           uz: "Gipotireoz ko‘pincha levotiroksin deb ataladigan sintetik qalqonsimon bez gormoni yordamida nazorat qilinadi. Davolashda gormon darajasini muntazam tekshirish va dori miqdorini shifokor tavsiyasiga ko‘ra moslashtirish muhim. To‘g‘ri davolash ko‘plab bemorlarga odatiy hayot tarzini davom ettirish imkonini beradi.",
+          en: "Hypothyroidism is commonly managed with levothyroxine, a synthetic thyroid hormone. Treatment involves regular monitoring of hormone levels and adjusting the dose according to medical advice. With appropriate treatment, many people can continue their usual daily activities."
+        }
+      }
+    ],
+
+    nextCase: {
+      uz: "Keyingi ish fayli: Amiotrofik lateral skleroz (ALS)",
+      en: "Next case: Amyotrophic Lateral Sclerosis (ALS)"
+    }
+  }
+},
+   {
+  id: "als",
+  caseNo: "017",
+  category: "neuro",
+  categoryLabel: "Neurological",
+  stampStyle: "rose",
+
+  stamp: {
+    uz: "NEVROLOGIK KASALLIK",
+    en: "NEUROLOGICAL DISEASE"
+  },
+
+  title: {
+    uz: "Amiotrofik lateral skleroz",
+    en: "Amyotrophic Lateral Sclerosis"
+  },
+
+  hook: {
+    uz: "Insonning harakatlarini boshqaradigan nerv hujayralari asta-sekin faoliyatini yo‘qotsa nima yuz beradi?",
+    en: "What happens when the nerve cells controlling movement gradually lose their function?"
+  },
+
+  year: {
+    uz: "1869-yil — zamonaviy tadqiqotlar davri",
+    en: "1869 — the beginning of modern research"
+  },
+
+  detail: {
+    quote: {
+      uz: "ALS harakatni boshqaruvchi motor neyronlarga ta’sir qiladi, ammo odatda fikrlash va sezgi qobiliyatlarini bevosita yo‘qotmaydi.",
+      en: "ALS affects the motor neurons responsible for movement, but it does not usually directly impair thinking or the senses."
+    },
+
+    vitals: [
+      {
+        label: { uz: "Kasallik turi", en: "Condition type" },
+        value: { uz: "Progressiv nevrologik", en: "Progressive neurological" }
+      },
+      {
+        label: { uz: "Asosiy ta’sir", en: "Main effect" },
+        value: { uz: "Motor neyronlar", en: "Motor neurons" }
+      },
+    {
+       label: { uz: "Yuqumlilik", en: "Contagious" },
+        value: { uz: "Yo‘q", en: "No" }
+      }
+    ],
+
+    sections: [
+      {
+        type: "text",
+        no: "01",
+        heading: {
+          uz: "Harakatni boshqaruvchi neyronlar",
+          en: "The Neurons That Control Movement"
+        },
+        paragraphs: [
+          {
+            uz: "Amiotrofik lateral skleroz (ALS) — bosh miya va orqa miyadagi harakatni boshqaruvchi nerv hujayralari, ya’ni motor neyronlar zararlanishi bilan tavsiflanadigan progressiv kasallik. Ushbu hujayralar mushaklarga harakat qilish uchun zarur signallarni yetkazadi.",
+            en: "Amyotrophic lateral sclerosis (ALS) is a progressive disease characterized by the degeneration of motor neurons in the brain and spinal cord. These nerve cells transmit signals that muscles need to produce movement."
+          },
+          {
+            uz: "Motor neyronlar faoliyati buzilishi natijasida mushaklarda kuchsizlik, harakatlanish, gapirish, yutish va nafas olish bilan bog‘liq qiyinchiliklar paydo bo‘lishi mumkin. Kasallikning rivojlanish tezligi va belgilari har bir insonda turlicha bo‘ladi.",
+            en: "As motor neurons stop functioning, people may develop muscle weakness and difficulties with movement, speaking, swallowing, and breathing. The progression and symptoms vary from person to person."
+          },
+          {
+            uz: "ALS holatlarining aksariyati sporadik, ya’ni oilaviy tarix bilan bog‘liq bo‘lmagan shaklda uchraydi. Ayrim holatlar esa irsiy genetik o‘zgarishlar bilan bog‘liq. Kasallikning barcha sabab va mexanizmlari hali to‘liq aniqlanmagan.",
+            en: "Most ALS cases are sporadic, meaning they are not associated with a family history of the disease. Some cases are linked to inherited genetic changes. Not all causes and mechanisms of ALS are fully understood."
+          }
+        ]
+      },
+
+       {
+          type: "timeline",
+        no: "02",
+        heading: {
+          uz: "Kashfiyotlar va tadqiqotlar tarixi",
+          en: "A History of Discovery and Research"
+        },
+        items: [
+          {
+            era: { uz: "1824-yil", en: "1824" },
+            title: {
+              uz: "Dastlabki klinik tavsif",
+              en: "An Early Clinical Description"
+            },
+            text: {
+              uz: "Britaniyalik shifokor Charlz Bell orqa miya va harakatni boshqaruvchi nerv yo‘llari bilan bog‘liq kasalliklarni tushunishga muhim hissa qo‘shgan.",
+              en: "British physician Charles Bell made important contributions to understanding the spinal cord and nerve pathways involved in movement."
+            }
+          },
+          {
+            era: { uz: "1869-yil", en: "1869" },
+            title: {
+              uz: "Jan-Martin Sharkoning tadqiqotlari",
+              en: "Jean-Martin Charcot's Research"
+            },
+            text: {
+              uz: "Fransuz nevrologi Jan-Martin Sharko ALS bilan bog‘liq klinik va anatomik o‘zgarishlarni batafsil o‘rgangan. U kasallikning alohida nevrologik holat sifatida tushunilishiga katta hissa qo‘shgan.",
+              en: "French neurologist Jean-Martin Charcot extensively studied the clinical and anatomical changes associated with ALS, helping establish it as a distinct neurological condition."
+            }
+          },
+          {
+            era: { uz: "1939-yil", en: "1939" },
+            title: {
+              uz: "Lou Gehrigning kasalligi",
+              en: "Lou Gehrig's Disease"
+            },
+            text: {
+               uz: "Amerikalik beysbolchi Lou Gehrigga ALS tashxisi qo‘yilgach, kasallik AQSh jamoatchiligiga kengroq tanila boshlagan. Shu sababli u ayrim mamlakatlarda Lou Gehrig kasalligi deb ham ataladi.",
+              en: "After American baseball player Lou Gehrig was diagnosed with ALS, public awareness of the disease increased in the United States. It is therefore also known as Lou Gehrig's disease in some countries."
+            }
+          },
+          {
+            era: { uz: "1993-yil", en: "1993" },
+            title: {
+              uz: "SOD1 genining aniqlanishi",
+              en: "Discovery of the SOD1 Gene"
+            },
+            text: {
+              uz: "Tadqiqotchilar SOD1 genidagi ayrim mutatsiyalar irsiy ALS shakllari bilan bog‘liqligini aniqladilar. Bu kasallikning genetik asoslarini o‘rganishda muhim bosqich bo‘ldi.",
+              en: "Researchers identified mutations in the SOD1 gene as a cause of some inherited forms of ALS. This was an important milestone in understanding the genetic basis of the disease."
+            }
+          },
+          {
+            era: { uz: "XXI asr", en: "21st century" },
+            title: {
+              uz: "Genetika va molekulyar tadqiqotlar",
+              en: "Genetic and Molecular Research"
+            },
+            text: {
+              uz: "C9orf72 kabi genetik omillar, hujayra ichidagi oqsil almashinuvi va nerv hujayralarining zararlanish mexanizmlari bo‘yicha tadqiqotlar ALS haqidagi ilmiy tushunchalarni kengaytirdi.",
+              en: "Research into genetic factors such as C9orf72, protein processing, and mechanisms of nerve cell damage has expanded scientific understanding of ALS."
+            }
+          }
+        ]
+      },
+
+       {
+          type: "living",
+        no: "03",
+        heading: {
+          uz: "ALS bilan yashash",
+          en: "Living with ALS"
+        },
+        title: {
+          uz: "Yordam, parvarish va davolash",
+          en: "Treatment, Support, and Care"
+        },
+        text: {
+          uz: "Hozircha ALSni butunlay davolaydigan usul mavjud emas. Biroq ayrim dorilar kasallik rivojlanishini sekinlashtirishga yordam berishi mumkin. Fizioterapiya, nutq va yutish bo‘yicha mutaxassislar yordami, nafas olishni qo‘llab-quvvatlash hamda individual parvarish bemorning hayot sifatini yaxshilashda muhim ahamiyatga ega.",
+          en: "There is currently no cure for ALS. However, certain medicines may help slow disease progression. Physical therapy, speech and swallowing support, respiratory assistance, and individualized care are important for maintaining quality of life."
+        }
+      }
+    ],
+
+    nextCase: {
+       uz: "Keyingi ish fayli: O‘pka saratoni (Lung Cancer)",
+      en: "Next case: Lung Cancer"
+    }
+  }
 }
 ];
